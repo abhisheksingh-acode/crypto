@@ -556,6 +556,50 @@ header .hero-section {
   font-size: 13px;
 }
 
+.roadmap {
+  background: #222;
+  color: #fff;
+}
+
+.roadmap .main-row .float,
+.roadmap .main-row .desc {
+  padding: 50px;
+}
+
+.roadmap .main-row .float {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-right: 1px solid #fff;
+  position: relative;
+}
+
+.roadmap .main-row .float .content {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+.roadmap .main-row .float::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
+          box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .scene {
     width: 90%;

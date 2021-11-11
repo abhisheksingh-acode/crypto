@@ -440,6 +440,43 @@ header {
   }
 }
 
+.roadmap {
+  background: #222;
+  color: #fff;
+  .main-row {
+    .float,
+    .desc {
+      padding: 50px;
+    }
+    .float {
+      display: flex;
+      justify-content: flex-end;
+      border-right: 1px solid #fff;
+      position: relative;
+
+      .content {
+        border: 1px solid #fff;
+        padding: 5px 10px;
+        background: #fff;
+        color: #000;
+        font-size: 14px;
+      }
+    }
+    .float::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fff;
+      top: 50%;
+      left: 100%;
+      transform: translate(-50%, -50%);
+      box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
+    }
+  }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .scene {
     width: 90%;
