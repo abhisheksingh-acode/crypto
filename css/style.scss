@@ -12,9 +12,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+}
 
 header {
-  background-color: rgba(0, 0, 0, 0.877);
+  background-color: #111;
   color: #fff;
   .hero-section {
     padding: 100px 0;
@@ -473,6 +477,160 @@ header {
       left: 100%;
       transform: translate(-50%, -50%);
       box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
+    }
+  }
+}
+
+.token-allocation {
+  background: #111;
+  color: #fff;
+
+  .main-row {
+    height: 400px;
+    overflow: hidden;
+
+    .lt,
+    .rt {
+      padding: 20px 40px;
+
+      .title {
+        width: fit-content;
+        padding: 10px;
+        transform: translate(20px, 20px);
+        font-size: 15px;
+        background: #444;
+      }
+    }
+
+    .chart,
+    .graph {
+      height: 300px;
+      max-height: 300px;
+      width: 100%;
+      background: #333;
+    }
+    #graph {
+      height: 300px;
+    }
+  }
+}
+
+// wp token emission
+
+.token-emission {
+  background: #111;
+  padding: 50px 30px;
+  height: fit-content;
+  .main-div {
+    min-height: 400px;
+    background: #222;
+    margin-bottom: 20px;
+
+    .title {
+      background: #333;
+      width: fit-content;
+      font-size: 15px;
+      padding: 5px 10px;
+      color: #fff;
+      transform: translate(0px, -13px);
+    }
+  }
+
+  .row {
+    .lt {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .nos {
+        background: #333;
+        width: fit-content;
+        margin-right: 10px;
+        height: 80px;
+        color: #fff;
+        padding: 5px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .rt {
+      .table {
+        color: #fff;
+        font-size: 13px;
+        td {
+          border: 1px solid #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// token release
+.token-release {
+  background: #222;
+  min-height: 400px;
+  padding: 20px;
+
+  .table-top {
+    color: #fff;
+    padding: 10px;
+    border: none;
+
+    td,
+    th {
+      font-size: 13px;
+      border-top: 1px solid #fff;
+      border-right: 1px solid #fff;
+      background: #333;
+    }
+  }
+
+  .table {
+    border: none;
+    tr {
+      color: #fff;
+      font-size: 14px;
+      border: none;
+      td,
+      th {
+        text-align: center;
+        border: none;
+      }
+    }
+    tr.data {
+      background: #444;
+    }
+
+    tr:not(.data) {
+      border-bottom: 0.6px solid #fff;
+      // : 1px solid #fff;
+    }
+    tr:first-child {
+      border: none;
+    }
+  }
+}
+
+// fund usage
+
+.fund-usage {
+  background: #111;
+  min-height: 400px;
+  padding: 20px;
+
+  .lt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rt {
+    #pie-chartdiv {
+      width: auto;
+
+      height: 350px;
+      color: #fff !important;
     }
   }
 }

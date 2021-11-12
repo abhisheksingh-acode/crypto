@@ -12,8 +12,13 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+}
+
 header {
-  background-color: rgba(0, 0, 0, 0.877);
+  background-color: #111;
   color: #fff;
   overflow: hidden;
 }
@@ -598,6 +603,189 @@ header .hero-section {
           transform: translate(-50%, -50%);
   -webkit-box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
           box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
+}
+
+.token-allocation {
+  background: #111;
+  color: #fff;
+}
+
+.token-allocation .main-row {
+  height: 400px;
+  overflow: hidden;
+}
+
+.token-allocation .main-row .lt,
+.token-allocation .main-row .rt {
+  padding: 20px 40px;
+}
+
+.token-allocation .main-row .lt .title,
+.token-allocation .main-row .rt .title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  -webkit-transform: translate(20px, 20px);
+          transform: translate(20px, 20px);
+  font-size: 15px;
+  background: #444;
+}
+
+.token-allocation .main-row .chart,
+.token-allocation .main-row .graph {
+  height: 300px;
+  max-height: 300px;
+  width: 100%;
+  background: #333;
+}
+
+.token-allocation .main-row #graph {
+  height: 300px;
+}
+
+.token-emission {
+  background: #111;
+  padding: 50px 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.token-emission .main-div {
+  min-height: 400px;
+  background: #222;
+  margin-bottom: 20px;
+}
+
+.token-emission .main-div .title {
+  background: #333;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 15px;
+  padding: 5px 10px;
+  color: #fff;
+  -webkit-transform: translate(0px, -13px);
+          transform: translate(0px, -13px);
+}
+
+.token-emission .row .lt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.token-emission .row .lt .nos {
+  background: #333;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10px;
+  height: 80px;
+  color: #fff;
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.token-emission .row .rt .table {
+  color: #fff;
+  font-size: 13px;
+}
+
+.token-emission .row .rt .table td {
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.token-release {
+  background: #222;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.token-release .table-top {
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+
+.token-release .table-top td,
+.token-release .table-top th {
+  font-size: 13px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  background: #333;
+}
+
+.token-release .table {
+  border: none;
+}
+
+.token-release .table tr {
+  color: #fff;
+  font-size: 14px;
+  border: none;
+}
+
+.token-release .table tr td,
+.token-release .table tr th {
+  text-align: center;
+  border: none;
+}
+
+.token-release .table tr.data {
+  background: #444;
+}
+
+.token-release .table tr:not(.data) {
+  border-bottom: 0.6px solid #fff;
+}
+
+.token-release .table tr:first-child {
+  border: none;
+}
+
+.fund-usage {
+  background: #111;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.fund-usage .lt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fund-usage .rt #pie-chartdiv {
+  width: auto;
+  height: 350px;
+  color: #fff !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
