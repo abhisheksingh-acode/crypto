@@ -422,107 +422,67 @@
    <script>
       am5.ready(function () {
 
-         // Create root and chart
+         // Create root element
+         // https://www.amcharts.com/docs/v5/getting-started/#Root_element
          var root = am5.Root.new("chartdiv");
 
+         // Set themes
+         // https://www.amcharts.com/docs/v5/concepts/themes/
          root.setThemes([
             am5themes_Animated.new(root)
          ]);
 
+         // Create chart
+         // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
          var chart = root.container.children.push(
             am5percent.PieChart.new(root, {
-               layout: root.verticalLayout
+               endAngle: 270
             })
          );
 
          // Create series
+         // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
          var series = chart.series.push(
             am5percent.PieSeries.new(root, {
-               valueField: "percent",
-               categoryField: "type",
-               fillField: "color",
-               alignLabels: false
+               valueField: "value",
+               categoryField: "category",
+               endAngle: 270
             })
          );
 
-         series.slices.template.set("templateField", "sliceSettings");
-         series.labels.template.set("radius", 30);
-
-         // Set up click events
-         series.slices.template.events.on("click", function (event) {
-            console.log(event.target.dataItem.dataContext)
-            if (event.target.dataItem.dataContext.id != undefined) {
-               selected = event.target.dataItem.dataContext.id;
-            } else {
-               selected = undefined;
-            }
-            series.data.setAll(generateChartData());
+         series.states.create("hidden", {
+            endAngle: -90
          });
 
-         // Define data
-         var selected;
-         var types = [{
-            type: "Fossil Energy",
-            percent: 70,
-            color: series.get("colors").getIndex(0),
-            subs: [{
-               type: "Oil",
-               percent: 15
-            }, {
-               type: "Coal",
-               percent: 35
-            }, {
-               type: "Nuclear",
-               percent: 20
-            }]
+         // Set data
+         // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+         series.data.setAll([{
+            category: "Lithuania",
+            value: 501.9
          }, {
-            type: "Green Energy",
-            percent: 30,
-            color: series.get("colors").getIndex(1),
-            subs: [{
-               type: "Hydro",
-               percent: 15
-            }, {
-               type: "Wind",
-               percent: 10
-            }, {
-               type: "Other",
-               percent: 5
-            }]
-         }];
-         series.data.setAll(generateChartData());
+            category: "Czechia",
+            value: 301.9
+         }, {
+            category: "Ireland",
+            value: 201.1
+         }, {
+            category: "Germany",
+            value: 165.8
+         }, {
+            category: "Australia",
+            value: 139.9
+         }, {
+            category: "Austria",
+            value: 128.3
+         }, {
+            category: "UK",
+            value: 99
+         }]);
 
-
-         function generateChartData() {
-            var chartData = [];
-            for (var i = 0; i < types.length; i++) {
-               if (i == selected) {
-                  for (var x = 0; x < types[i].subs.length; x++) {
-                     chartData.push({
-                        type: types[i].subs[x].type,
-                        percent: types[i].subs[x].percent,
-                        color: types[i].color,
-                        pulled: true,
-                        sliceSettings: {
-                           active: true
-                        }
-                     });
-                  }
-               } else {
-                  chartData.push({
-                     type: types[i].type,
-                     percent: types[i].percent,
-                     color: types[i].color,
-                     id: i
-                  });
-               }
-            }
-            return chartData;
-         }
+         series.appear(1000, 100);
 
       }); // end am5.ready()
    </script>
-
 
    <script>
       am5.ready(function () {
@@ -785,9 +745,7 @@
 
 
 
-
-
-
+   <!-- graph div  -->
    <script>
       am5.ready(function () {
 
@@ -960,7 +918,7 @@
 
 
 
-
+   <!-- fund of usage circle  -->
    <script>
       am5.ready(function () {
 
