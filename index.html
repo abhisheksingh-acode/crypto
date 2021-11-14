@@ -9,6 +9,8 @@
 
 
    <!-- bootstrap 5  -->
+   <link rel="stylesheet" href="css/style.css">
+
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
    <!-- font awsome  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
@@ -25,7 +27,15 @@
          font-family: "Comfortaa", cursive;
          font-weight: 400;
       }
+
+      #demoBookExample {
+         width: 100%;
+         height: 100%;
+         /* transform: rotate(90deg); */
+      }
    </style>
+
+
 
 </head>
 
@@ -77,56 +87,374 @@
       </nav>
       <div class="row mx-auto container-md hero-section">
          <div class="col-md-6">
-            <h2>The Rise of DeFi into P2P Transactions</h2>
+            <h2 data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="900"
+               data-aos-easing="ease-in-out">The Rise of DeFi into P2P Transactions</h2>
             <br>
-            <p>DeFi payment solutions create a more open economic system for underbanked and unbanked populations.</p>
-            <p>We are also helping large financial institutions streamline market infrastructure and better serve
+            <p data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1200"
+               data-aos-easing="ease-in-out">DeFi payment solutions create a more open economic system for underbanked
+               and unbanked populations.</p>
+            <p data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500"
+               data-aos-easing="ease-in-out">We are also helping large financial institutions streamline market
+               infrastructure and better serve
                wholesale and retail customers.</p>
 
-            <div class="buttons">
-               <a href="#" class="button btn btn-secondary">Purchase Token</a>
-               <a href="#" class="button btn btn-secondary mx-3">Token Distr.</a>
-               <a href="#" class="button btn btn-secondary">Whitepaper</a>
+            <div class="buttons" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50" data-aos-duration="1800"
+               data-aos-easing="ease-in-out">
+               <a href="#" class="button btn btn-secondary py-2">Purchase Token</a>
+
+               <a class="btn" id="svg-btn">
+                  <svg viewBox='0 0 100 50' width='230' height='100' fill='none'>
+                     <circle cx='20' cy='35' r='8.5' fill='#6c757d' class='mainCircle'></circle>
+                     <circle cx='20' cy='35' r='8.05' stroke='#6c757d' stroke-width='.9' fill='url(#gradient)'
+                        class='mainCircleFill'></circle>
+                     <rect x='17.5' y='32.5' width='5' height='9' stroke='none' fill='#6c757d' class='rect'></rect>
+                     <path d='M20,39 l3.5,-3.5 l0,0 M20,39 l-3.5,-3.5 l0,0 M20,39 l0,-7.5' stroke='#fff'
+                        stroke-linecap='round' stroke-width='1' class='arrow'></path>
+                     <text x='55' y='36.5' fill='#fff' text-anchor='middle' font-size='7.5' font-family='inherit'
+                        letter-spacing='.2' class='text'>Whitepaper</text>
+                     <path
+                        d='M50,25 h30 a10,10 0 0,1 10,10 a10,10 0 0,1 -10,10 s-30,0 -60,0 a10,10 0 0,1 -10,-10 a10,10 0 0,1 10,-10 h30'
+                        stroke='#6c757d' stroke-width='.7' fill='transparent' class='btn'></path>
+                     <circle cx='20' cy='35' r='7.9' fill='#fff' fill-opacity='0' stroke='#fff' stroke-width='1.6'
+                        stroke-opacity='0' class='subCircle'></circle>
+                     <circle cx='50' cy='26' r='0' fill='#fff' class='dot'></circle>
+                     <linearGradient id='gradient' x1='0%' y1='0%' x2='0%' y2='100%'>
+                        <stop offset='98%' class='gradient' stop-color='transparent' />
+                        <stop offset='98%' class='gradient' stop-color='#6c757d' />
+                     </linearGradient>
+                  </svg>
+               </a>
+
             </div>
          </div>
-         <div class="col-md-6">
+         <div class="col-md-6 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-offset="200"
+            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 
-            <div class="animation-div">
-               <div class="img-card ">
-                  <!-- cards -->
-                  <img class="card1"
-                     src="	https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
-                     alt="">
-                  <img class="card2"
-                     src="	https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
-                     alt="">
-                  <img class="card3"
-                     src="	https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
-                     alt="">
-                  <!-- cards end  -->
-               </div>
-               <!-- circles -->
-               <div class="circles">
-                  <img class="circle1"
-                     src="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
-                     alt="">
-                  <img class="circle2"
-                     src="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
-                     alt="">
-                  <img class="circle3"
-                     src="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
-                     alt="">
-                  <img class="circle4"
-                     src="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
-                     alt="">
-                  <img class="circle5"
-                     src="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
-                     alt="">
-                  <img class="circle6"
-                     src="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
-                     alt="">
-               </div>
-               <!-- circles end  -->
+            <div id="svg-animation" style="transform: translate(0px,-60px);">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="857" height="807"
+                  preserveAspectRatio="xMidYMid meet" style="width: 100%;height: 100%;">
+                  <g clip-path="url(#svg_animation_mask)">
+                     <!-- Step 1 -->
+
+
+                     <!-- base -->
+                     <g transform="matrix(1,0,0,1,-1.93,468.7)" opacity="1">
+                        <image class="animated base-img fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1s" width="558px" height="339px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
+                           style="animation-delay: 1s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- btc-base-shadow -->
+                     <g transform="matrix(1,0,0,1,60,580)" opacity="0.8">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="2s" width="130px" height="130px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-shadow.svg"
+                           style="animation-delay: 2s; opacity: 1;"></image>
+                     </g>
+                     <!-- btc-base -->
+                     <g transform="matrix(1,0,0,1,60.8,560.9)" opacity="1">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="1.9s" width="130px" height="130px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-btc.svg"
+                           style="animation-delay: 1.9s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- eth-base-shadow -->
+                     <g transform="matrix(1,0,0,1,215,580)" opacity="0.8">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="2s" width="90px" height="90px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-shadow.svg"
+                           style="animation-delay: 2s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- eth-base -->
+                     <g transform="matrix(1,0,0,1,215,545)" opacity="1">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="1.5s" width="90px" height="130px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-eth.svg"
+                           style="animation-delay: 1.5s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- neo-base-shadow -->
+                     <g transform="matrix(1,0,0,1,238,670)" opacity="0.8">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="2s" width="120px" height="120px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-shadow.svg"
+                           style="animation-delay: 2s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- neo-base -->
+                     <g transform="matrix(1,0,0,1,240.8,660.9)" opacity="1">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="1.7s" width="120px" height="120px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
+                           style="animation-delay: 1.7s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- btc -->
+                     <g transform="matrix(1,0,0,1,97,560)" opacity="1">
+                        <image class="animated svg-elements-2 fadeInUpShorter svg-elements-2-animation"
+                           data-animation="fadeInUpShorter" data-animation-delay="2s" width="60px" height="60px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/btc.svg"
+                           style="animation-delay: 2s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- eth -->
+                     <g transform="matrix(1,0,0,1,230,550)" opacity="1">
+                        <image class="animated svg-elements-1 fadeInUpShorter svg-elements-1-animation"
+                           data-animation="fadeInUpShorter" data-animation-delay="1.6s" width="60px" height="60px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/eth.svg"
+                           style="animation-delay: 1.6s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- neo -->
+                     <g transform="matrix(1,0,0,1,270 ,645)" opacity="1">
+                        <image class="animated svg-elements-1 fadeInUpShorter svg-elements-1-animation"
+                           data-animation="fadeInUpShorter" data-animation-delay="1.8s" width="70px" height="70px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/neo.svg"
+                           style="animation-delay: 1.8s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- Step-2 -->
+
+                     <!-- base-shaodw -->
+                     <g transform="matrix(1,0,0,1,152.1,445.61)" opacity="0.8">
+                        <image class="animated fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1.4s" width="406px" height="274px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base-shadow.svg"
+                           style="animation-delay: 1.4s; opacity: 1;"></image>
+                     </g>
+                     <!-- base -->
+                     <g transform="matrix(1,0,0,1,151.07,301.7)" opacity="0.95">
+                        <image class="animated base-img fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1.4s" width="558px" height="339px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
+                           style="animation-delay: 1.4s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- logo-circle-path -->
+                     <g transform="matrix(1,0,0,1,428.5,403.5)" opacity="1">
+                        <g opacity="1" transform="matrix(1.0196,0,0,0.9676,-49.875,71.125)">
+                           <path class="animated path" data-animation="path" data-animation-delay="1.4s"
+                              stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="4"
+                              d=" M57.584999084472656,53.77799987792969 C41.18600082397461,60.93600082397461 21.354000091552734,65.125 0,65.125 C-56.362789154052734,65.125 -102.125,35.94248580932617 -102.125,0 C-102.125,-35.94248580932617 -56.362789154052734,-65.125 0,-65.125 C0,-65.125 0,-65.125 0,-65.125 C56.362789154052734,-65.125 102.125,-35.94248580932617 102.125,0 C102.125,22.325000762939453 84.47000122070312,42.04199981689453 57.584999084472656,53.77799987792969"
+                              style="animation-delay: 1.4s; opacity: 1;"></path>
+                        </g>
+                     </g>
+
+                     <!-- neo-path -->
+                     <g transform="matrix(1,0,0,1,345,595)" opacity="1">
+                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                           <path class="animated path-reverse" data-animation="path-reverse" data-animation-delay="1.4s"
+                              stroke-linecap="butt" stroke-linejoin="miter" stroke-dashoffset="20" fill="none"
+                              fill-opacity="0" stroke-miterlimit="4" stroke="rgb(99,125,221)" stroke-opacity="1"
+                              stroke-width="3"
+                              d="M0.26,101.431l65-45  c0,0,5.4-1.4,5-25l1-10c0,0-1.2-5.6,6-8l50-30c0,0,7.4-3.6,1-7l-65-38"
+                              style="animation-delay: 1.4s; opacity: 1;"></path>
+                        </g>
+                     </g>
+
+                     <!-- eth-path -->
+                     <g transform="matrix(1,0,0,1,290,545)" opacity="1">
+                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                           <path class="animated path-reverse" data-animation="path-reverse" data-animation-delay="1.4s"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              d="M0.239,42.447l11-6  c0,0,5-1.2,4-25v-9c0,0-2-5.8,6-9l16-8"
+                              style="animation-delay: 1.4s; opacity: 1;"></path>
+                        </g>
+                     </g>
+
+                     <!-- btc-path -->
+                     <g transform="matrix(1,0,0,1,175,430)" opacity="1">
+                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                           <path class="animated path" data-animation="path" data-animation-delay="2.4s"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              d="M101.68,24.545l-25-15  c0,0-6.14-6-14-1l-28,17c0,0-6.4,5.16-5-30v-20c0,0,0.8-5.6-4-5l-35,25c0,0-5.2,1.6-4,18v90c0,0-1.6,9.8,6,11l40,25c0,0,7,2.6,2,7  l-35,20"
+                              style="animation-delay: 2.4s; opacity: 1;"></path>
+                        </g>
+                     </g>
+                     <!-- logo-base -->
+                     <g transform="matrix(1,0,0,1,255,345)" opacity="0.5">
+                        <image class="animated fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1.4s" width="250px" height="260px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/logo-base.svg"
+                           style="animation-delay: 1.4s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- logo-shaodw -->
+                     <g transform="matrix(0.1385,0,0,0.1175,275,385)" opacity="0.65">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="2.2s" width="1500px" height="1500px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/logo-shadow.svg"
+                           style="animation-delay: 2.2s; opacity: 1;"></image>
+                     </g>
+                     <!-- logo -->
+                     <g transform="matrix(1,0,0,1,310,410)" opacity="1">
+                        <image class="animated cic-logo fadeInUpShortest cic-logo-animation"
+                           data-animation="fadeInUpShortest" data-animation-delay="2.4s" width="130px" height="89px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/logo.svg"
+                           style="animation-delay: 2.4s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- Step 3 -->
+                     <!-- base-shaodw -->
+                     <g transform="matrix(1,0,0,1,305.1,277.61)" opacity="0.8">
+                        <image class="animated fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1.8s" width="406px" height="274px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base-shadow.svg"
+                           style="animation-delay: 1.8s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- base- -->
+                     <g transform="matrix(1,0,0,1,301.07,133.7)" opacity="0.95">
+                        <image class="animated base-img fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1.8s" width="558px" height="339px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
+                           style="animation-delay: 1.8s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- car-path -->
+                     <g transform="matrix(1,0,0,1,320.5,330.5)" opacity="1">
+                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                           <path class="animated path" data-animation="path" data-animation-delay="2.4s"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              d="M32.208,82.43l-35-20  c0,0-6.714-2.571,1-7l26-15c0,0,4.857-1.143,8-8v-35c0,0,0.857-5.81,3-6l70-45"
+                              style="animation-delay: 2.4s; opacity: 1;"></path>
+                        </g>
+                     </g>
+
+                     <!-- car-base-shadow -->
+                     <g transform="matrix(1,0,0,1,415,235)" opacity="0.8">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="3s" width="100px" height="100px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-shadow.svg"
+                           style="animation-delay: 3s; opacity: 1;"></image>
+                     </g>
+                     <!-- car-base -->
+                     <g transform="matrix(1,0,0,1,408.62,240.74)" opacity="1">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="2.1s" width="109px" height="68px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-car.svg"
+                           style="animation-delay: 2.1s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- car -->
+                     <g transform="matrix(1,0,0,1,420.8799,200.27)" opacity="1">
+                        <image class="animated svg-elements-1 fadeInUpShorter svg-elements-1-animation"
+                           data-animation="fadeInUpShorter" data-animation-delay="2.2s" width="80px" height="80px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/car.svg"
+                           style="animation-delay: 2.2s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- mobile-path -->
+                     <g transform="matrix(1,0,0,1,475,410)" opacity="1">
+                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                           <path class="animated path" data-animation="path" data-animation-delay="2.4s"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              d="M0.261,90.447l50,30  c0,0,4.15,5.17,14,0l12-6c0,0,6-2,5-8v-50c0,0-0.5-9,9-12l80-45c0,0,5.75-3.5,0-7l-32-16"
+                              style="animation-delay: 2.4s; opacity: 1;"></path>
+                        </g>
+                     </g>
+
+                     <!-- mobile-base-shadow -->
+                     <g transform="matrix(1,0,0,1,565,300)" opacity="0.8">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="3s" width="120px" height="120px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-shadow.svg"
+                           style="animation-delay: 3s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- mobile-base -->
+                     <g transform="matrix(1,0,0,1,565,310)" opacity="1">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="2.3s" width="122px" height="78px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-mobile.svg"
+                           style="animation-delay: 2.3s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- mobile -->
+                     <g transform="matrix(1,0,0,1,600,280)" opacity="1">
+                        <image class="animated svg-elements-1 fadeInUpShorter svg-elements-1-animation"
+                           data-animation="fadeInUpShorter" data-animation-delay="2.4s" width="51px" height="78px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/mobile.svg"
+                           style="animation-delay: 2.4s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- home-path -->
+                     <g transform="matrix(1,0,0,1,495,260)" opacity="1">
+                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                           <path class="animated path-reverse" data-animation="path-reverse" data-animation-delay="1.4s"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              d="M102.684,0v20  c0.666,7.167-9,11-9,11l-130,75c-11.25,4.5-9,13-9,13v50"
+                              style="animation-delay: 1.4s; opacity: 1;"></path>
+                        </g>
+                     </g>
+
+                     <!-- home-base-shadow -->
+                     <g transform="matrix(1,0,0,1,570,150)" opacity="0.8">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="3s" width="200px" height="200px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-shadow.svg"
+                           style="animation-delay: 3s; opacity: 1;"></image>
+                     </g>
+                     <!-- home-base -->
+                     <g transform="matrix(1,0,0,1,570.8,140.9)" opacity="1">
+                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                           data-animation-delay="2.4s" width="200px" height="150px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-home.svg"
+                           style="animation-delay: 2.4s; opacity: 1;"></image>
+                     </g>
+                     <!-- home -->
+                     <g transform="matrix(1,0,0,1,600,90)" opacity="1">
+                        <image class="animated svg-elements-2 fadeInUpShorter svg-elements-2-animation"
+                           data-animation="fadeInUpShorter" data-animation-delay="2.5s" width="140px" height="140px"
+                           preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/home.svg"
+                           style="animation-delay: 2.5s; opacity: 1;"></image>
+                     </g>
+
+                     <!-- step-1-text -->
+                     <g transform="matrix(1,0,0,1,734,400)" opacity="0.8">
+                        <image class="animated fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="2s" width="120px" height="26px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/physical.svg"
+                           style="animation-delay: 2s; opacity: 1;"></image>
+                     </g>
+                     <!-- step-2-text -->
+                     <g transform="matrix(1,0,0,1,602,569)" opacity="0.8">
+                        <image class="animated fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1.6s" width="180px" height="24px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/cic-blockchain.svg"
+                           style="animation-delay: 1.6s; opacity: 1;"></image>
+                     </g>
+                     <!-- step-3-text -->
+                     <g transform="matrix(1,0,0,1,432,745)" opacity="0.8">
+                        <image class="animated fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                           data-animation-delay="1.2s" width="80px" height="24px" preserveAspectRatio="xMidYMid slice"
+                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/digital.svg"
+                           style="animation-delay: 1.2s; opacity: 1;"></image>
+                     </g>
+                  </g>
+                  <defs>
+                     <clipPath id="svg_animation_mask">
+                        <rect width="857" height="807" x="0" y="0"></rect>
+                     </clipPath>
+                  </defs>
+               </svg>
             </div>
          </div>
       </div>
@@ -134,45 +462,70 @@
 
    <!-- problem and solutions section  -->
    <section class="solutions">
-      <div class="main-row mx-auto container-fluid flex-column">
-         <div class="scene">
-            <article class="book">
-               <section class="page active">
-                  <div class="front">
-                     <h1>Problem</h1>
-                     <p>A tiny jQuery script to create a mobile-friendly 3D page flip effect.</p>
-                  </div>
-                  <div class="back">
-                     <h1>– 1 –</h1>
-                     <p>Page 1</p>
-                  </div>
-               </section>
-               <section class="page">
-                  <div class="front">
-                     <h1>– 2 –</h1>
-                     <p>Page 2
-                     </p>
-                  </div>
-                  <div class="back">
-                     <h1>– 3 –</h1>
-                     <p>Page 3</p>
-                  </div>
-               </section>
-               <section class="page">
-                  <div class="front">
-                     <h1>– 4 –</h1>
-                     <p>Page 4</p>
-                  </div>
-                  <div class="back">
-                     <h1>– 5 –</h1>
-                     <p>Page 5</p>
-                  </div>
-               </section>
-            </article>
+      <div class="main-row mx-auto p-0 container-fluid ">
+         <div class="flip-book" id="demoBookExample">
+            <div class="page page-cover page-cover-top" data-density="hard">
+               <div class="page-content">
+                  <h2>BOOK TITLE</h2>
+               </div>
+            </div>
+            <div class="page">
+               <div class="page-content">
+                  <h2 class="page-header">Page header 1</h2>
+                  <div class="page-image" style="background-image: url(images/html/1.jpg)"></div>
+                  <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh,
+                     non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non
+                     tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a
+                     venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim.
+                     Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit
+                     amet,
+                     consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse
+                     potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac
+                     sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+                  <div class="page-footer">2</div>
+               </div>
+            </div>
+            <!-- PAGES .... -->
+            <div class="page">
+               <div class="page-content">
+                  <h2 class="page-header">Page header - 15</h2>
+                  <div class="page-image" style="background-image: url(images/html/7.jpg)"></div>
+                  <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh,
+                     non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non
+                     tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a
+                     venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim.
+                     Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit
+                     amet,
+                     consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse
+                     potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac
+                     sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+                  <div class="page-footer">16</div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="page-content">
+                  <h2 class="page-header">Page header - 16</h2>
+                  <div class="page-image" style="background-image: url(images/html/8.jpg)"></div>
+                  <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh,
+                     non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non
+                     tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a
+                     venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim.
+                     Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit
+                     amet,
+                     consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse
+                     potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac
+                     sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+                  <div class="page-footer">17</div>
+               </div>
+            </div>
+            <div class="page page-cover page-cover-bottom" data-density="hard">
+               <div class="page-content">
+                  <h2>THE END</h2>
+               </div>
+            </div>
          </div>
       </div>
    </section>
-
 
 
 
@@ -184,14 +537,16 @@
       <div class="main-row row mx-auto container-fluid px-md-5">
 
          <div class="swot-left col-3 ">
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+               data-aos-easing="ease-in-out">
                <h3 class="title">content one</h3>
-               <small class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas doloribus
+               <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-offset="170" data-aos-delay="50" data-aos-duration="1400"
+               data-aos-easing="ease-in-out">
                <h3 class="title">content one</h3>
-               <small class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas doloribus
+               <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
          </div>
@@ -200,11 +555,15 @@
          <div class="swot-circles col-6 row mx-auto p-0">
             <div class="col-6 box">
                <div class="circle swot1">
+                  <div class="bar"></div>
+                  <div class="bar1"></div>
                   <h2>W</h2>
                </div>
             </div>
             <div class="col-6 box">
                <div class="circle swot2">
+                  <div class="bar"></div>
+                  <div class="bar1"></div>
                   <h2>O</h2>
                </div>
             </div>
@@ -222,14 +581,16 @@
 
 
          <div class="swot-right col-3 ">
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+               data-aos-easing="ease-in-out">
                <h3 class="title">content one</h3>
-               <small class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas doloribus
+               <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-offset="170" data-aos-delay="50" data-aos-duration="1400"
+               data-aos-easing="ease-in-out">
                <h3 class="title">content one</h3>
-               <small class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas doloribus
+               <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
          </div>
@@ -240,47 +601,616 @@
    </section>
 
 
+
+   <!-- <div id="divmy" style="position: relative;">
+
+   </div> -->
 
 
    <!--visualise  section-->
-   <section class="visualise">
+   <section class="visualise ">
 
 
-      <div class="main-row row mx-auto containeer-fluid p-0">
-         <div class="col-6 lt">
+      <!-- <link rel='stylesheet'
+         href='https://appinventiv.com/wp-content/themes/twentynineteen-child/css/home.css?ver=5.6' /> -->
+      <link rel="stylesheet" href="css/home.css">
 
-            <div class="under-circle">
-               <h3 class="sub-big">Visualise</h3>
-               <h1 class="big">Visualise</h1>
-               <p class="sub-big">Lorem ipsum dolor.</p>
-            </div>
+      <section class="wrapper">
+         <section class="wrapper">
 
-            <div class="content-div">
-               <h1 class="big">Visualise</h1>
-               <h3 class="sub-big">Lorem ipsum dolor </h3>
-               <p class="text">Lorem ipsum dolor sit.</p>
-               <span class="">Read More <i class="fas text-white fa-arrow-right"></i></span>
-            </div>
+            <!-- Slider -->
+            <div id="container-general" class="trig-rel ">
+               <section id="we-lead" class="common-slider d-none">
+                  <div class="wrapper-img">
+                     <div class="container-action">
+                        <div class="btn">
+                           <svg class="progress active" viewBox="0 0 120 120">
+                              <circle cx="60" cy="60" r="54"></circle>
+                           </svg>
 
-         </div>
-         <div class="col-6 rt">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="" width="8.952" height="15.238"
+                              viewBox="0 0 8.952 15.238">
+                              <path id="Path_1365" data-name="Path 1365"
+                                 d="M110.187,7.024,103.406.243a.835.835,0,0,0-1.179,0l-.5.5a.835.835,0,0,0,0,1.179l5.694,5.694-5.7,5.7a.835.835,0,0,0,0,1.179l.5.5a.835.835,0,0,0,1.179,0l6.787-6.787a.841.841,0,0,0,0-1.183Z"
+                                 transform="translate(-101.478)" fill="#fff" />
+                           </svg>
 
-         </div>
-      </div>
+                        </div>
+                     </div>
+                     <div class="container-el">
+                        <div class="el"
+                           style="background-image: url(https://appinventiv.com/wp-content/themes/twentynineteen-child/images/appinventiv-mobile-app-design-&-development-company.webp);"
+                           alt="Appinventiv - Mobile App Design & Development Company"
+                           title="Appinventiv - Mobile App Design & Development Company">
+                           <div class="slider-content">
+                              <div class="heading2">Fastest growing digital<br> product agency in APAC</div>
+                              <div class="heading5">Work with hand-picked tech talent having experience of working with
+                                 companies, from around the world and time-zones. </div>
+                           </div>
 
+                        </div>
+                        <div class="el"
+                           style="background-image: url(https://appinventiv.com/wp-content/themes/twentynineteen-child/images/appinventiv-work-culture.webp)"
+                           alt="Appinventiv Work Culture" title="Appinventiv Work Culture">
+                           <div class="slider-content">
+                              <div class="heading2">We lead. The industry follows as we shape your vision to reality
+                              </div>
+                              <div class="heading5">Work with hand-picked tech talent having experience of working with
+                                 companies, from around the world and time-zones. </div>
+                           </div>
+                        </div>
+                        <div class="el"
+                           style="background-image: url(https://appinventiv.com/wp-content/themes/twentynineteen-child/images/appinventiv-project-management.webp);"
+                           alt="Appinventiv Project Management" title="Appinventiv Project Management">
+                           <div class="slider-content">
+                              <div class="heading2">World Class Full Stack Product Team On Demand</div>
+                              <div class="heading5">Our teams can design, build, ship and scale your idea and make it a
+                                 reality in the most efficient way. </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="min-container">
+                     <div class="flex_wrapper space_between abt_cnt_wrap">
+                        <div class="about_us">
+                           <div class="heading3">
+                              Skilled techies,
+                           </div>
+                           <div class="heading5">
+                              in-house
+                           </div>
+                        </div>
+                        <div class="about_us">
+                           <div class="heading3">
+                              Definite process,
+                           </div>
+                           <div class="heading5">
+                              extraordinary results
+                           </div>
+                        </div>
+                        <div class="about_us">
+                           <div class="heading3">
+                              Unmatched transparency,
+
+                           </div>
+                           <div class="heading5">
+                              offering total visibility
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </section>
+
+               <!-- Portfolio -->
+               <div class="section appi-portfolio-sec clearfix desk ">
+                  <div class="trigger-wpsec">
+                     <div id="trigger1" class="spacer"></div>
+                  </div>
+                  <div class="appi-ins-portfolio-sec clearfix">
+                     <div class="appi-portfolio-sec-left">
+                        <div class="appi-port-left-content">
+                           <div class="award-grp">
+                              <figure class="l1"><img class="lazyload"
+                                    data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/world-communication-awards-for-best-digital-experience.png"
+                                    alt="World Communication Awards for Best Digital Experience"
+                                    title="World Communication Awards for Best Digital Experience"></figure>
+                              <figure class="l2"><img class="lazyload"
+                                    data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/mobile-app-of-the-year-by-entrepreneur.png"
+                                    alt="Mobile App of the year by Entrepreneur"
+                                    title="Mobile App of the year by Entrepreneur"></figure>
+                           </div>
+                           <div class="pp-head">
+                              <p><span class="l1">JobGet</span></p>
+                              <p><span class="l2">VEME</span></p>
+                              <p><span class="l3">Actidrive</span></p>
+                              <p><span class="l4">Domino's</span></p>
+                              <p><span class="l5">Karavan</span></p>
+                              <p><span class="l6">IKEA</span></p>
+                              <p><span class="l7">MellToo</span></p>
+                           </div>
+                           <div class="appi-pp-para">
+                              <div class="appi-cont appi-pp-l1">
+                                 <p><span class="l1">The award winning app that is reshaping the employment</span></p>
+                                 <p><span class="l2">landscape has become the de facto platform for the blue</span></p>
+                                 <p><span class="l3">collar job space.</span>
+                                 </p>
+                              </div>
+                              <div class="appi-cont appi-pp-l2">
+                                 <p><span class="l1">Veme is the future of social videos, developed</span></p>
+                                 <p><span class="l2">with an aim to decentralize the authentic, loyal</span></p>
+                                 <p><span class="l3">network between the media creators and influencers.</span>
+                                 </p>
+                              </div>
+                              <div class="appi-cont appi-pp-l3">
+                                 <p><span class="l1">An intuitive gesture-recognition</span>
+                                 </p>
+                                 <p><span class="l2">application built on IoT, enabling drivers</span>
+                                 </p>
+                                 <p><span class="l3">to drive distraction-free.</span></p>
+                              </div>
+                              <div class="appi-cont appi-pp-l4">
+                                 <p><span class="l1">How we increased Dominos</span></p>
+                                 <p><span class="l2">conversion rate to 23% with a refined</span></p>
+                                 <p><span class="l3">UX strategy.</span></p>
+                              </div>
+                              <div class="appi-cont appi-pp-l5">
+                                 <p><span class="l1">We are developing world's first AR</span></p>
+                                 <p><span class="l2">Experiential network platform with a</span></p>
+                                 <p><span class="l3">valuation at $4m</span></p>
+                              </div>
+                              <div class="appi-cont appi-pp-l6">
+                                 <p><span class="l1">A one stop ERP Solution for Shoppers</span></p>
+                                 <p><span class="l2">to view all the store offers & for retailers to</span></p>
+                                 <p><span class="l3">get all customer data at on place.</span></p>
+                              </div>
+                              <div class="appi-cont appi-pp-l7">
+                                 <p><span class="l1">Melltoo, the App of the Year 2016, is UAE’s</span></p>
+                                 <p><span class="l2">top classified ads platform that</span></p>
+                                 <p><span class="l3">serves you with options for finding buyer/seller,</span></p>
+                              </div>
+
+                           </div>
+                           <div class="appi-casestudy-navi">
+                              <div class="pp-navi l2">
+                                 <div class="appi-cta read_more_wrapper">
+                                    <a href="/portfolio/jobget-job-search-app/">
+                                       <span class="text">
+                                          View Case Study
+                                          <span class="arrow">
+                                             <i><span>→</span></i>
+                                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32"
+                                                height="32" viewBox="0 0 32 32">
+                                                <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"
+                                                   stroke-miterlimit="10">
+                                                   <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
+                                                   </circle>
+                                                </g>
+                                             </svg>
+                                          </span>
+                                       </span>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="pp-navi l1">
+                                 <div class="appi-cta read_more_wrapper">
+                                    <a class="cm_soon">
+                                       <span class="text">
+                                          Coming Soon
+                                       </span>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="pp-navi l3">
+                                 <div class="appi-cta read_more_wrapper">
+                                    <div class="appi-cta read_more_wrapper">
+                                       <a href="/portfolio/actidrive-driver-assistant-app/">
+                                          <span class="text">
+                                             View Case Study
+                                             <span class="arrow">
+                                                <i><span>→</span></i>
+                                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32"
+                                                   height="32" viewBox="0 0 32 32">
+                                                   <g fill="none" stroke="#fff" stroke-width="1.3"
+                                                      stroke-linejoin="round" stroke-miterlimit="10">
+                                                      <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
+                                                      </circle>
+                                                   </g>
+                                                </svg>
+                                             </span>
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="pp-navi l4">
+                                 <div class="appi-cta read_more_wrapper">
+                                    <a href="/portfolio/dominos-pizza-delivery-app/">
+                                       <span class="text">
+                                          View Case Study
+                                          <span class="arrow">
+                                             <i><span>→</span></i>
+                                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32"
+                                                height="32" viewBox="0 0 32 32">
+                                                <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"
+                                                   stroke-miterlimit="10">
+                                                   <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
+                                                   </circle>
+                                                </g>
+                                             </svg>
+                                          </span>
+                                       </span>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="pp-navi l5">
+                                 <!-- <div class="appi-cta read_more_wrapper">
+                                          <a href="/portfolio/karavan-social-networking-app/">
+                                                      <span class="text">
+                                                          View Case Study
+                                                          <span class="arrow">
+                                                              <i><span>→</span></i>
+                                                              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                                  <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round" stroke-miterlimit="10">
+                                                                      <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                                                  </g>
+                                                              </svg>
+                                                          </span>
+                                                      </span>
+                                                  </a>
+                                              </div> -->
+                              </div>
+                              <div class="pp-navi l6">
+                                 <div class="appi-cta read_more_wrapper">
+                                    <a href="/portfolio/ikea-shopping-app/">
+                                       <span class="text">
+                                          View Case Study
+                                          <span class="arrow">
+                                             <i><span>→</span></i>
+                                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32"
+                                                height="32" viewBox="0 0 32 32">
+                                                <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"
+                                                   stroke-miterlimit="10">
+                                                   <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
+                                                   </circle>
+                                                </g>
+                                             </svg>
+                                          </span>
+                                       </span>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="pp-navi l7">
+                                 <div class="appi-cta read_more_wrapper">
+                                    <a class="cm_soon">
+                                       <span class="text">
+                                          Coming Soon
+                                       </span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="clock-dial-center-wrap">
+                        <span class="clockbg-dial"></span>
+                        <div class="nexgtv-center-text">
+                           <div class="text-big">
+                              <p>Innovation Award</p>
+                           </div>
+                           <div class="text-sm">
+                              <p>winning App</p>
+                           </div>
+                        </div>
+
+                        <div class="appi-port-clocktext blockchain">
+                           <div class="up-text">
+                              <p class="l1">The Next Big</p>
+                           </div>
+                           <div class="middel-text">
+                              <p class="l2">Blockchain</p>
+                           </div>
+                           <div class="down-text">
+                              <p class="l3">Revolution</p>
+                           </div>
+                        </div>
+
+                        <div class="appi-port-clocktext nasa actidrive">
+                           <div class="up-text">
+                              <p class="l1">Redefining</p>
+                           </div>
+                           <div class="middel-text">
+                              <p class="l2">
+                                 BMI Measurement
+                              </p>
+                           </div>
+                           <div class="down-text">
+                              <p class="l2"></p>
+                           </div>
+                        </div>
+
+                        <div class="appi-port-clocktext dominos">
+                           <div class="up-text">
+                              <p class="l1">Redefining</p>
+                           </div>
+                           <div class="middel-text">
+                              <p class="l2">UX Strategy</p>
+                           </div>
+                           <div class="down-text">
+                              <p class="l3">and UI design</p>
+                           </div>
+                        </div>
+
+                        <div class="appi-port-clocktext binkx">
+                           <div class="up-text">
+                              <p class="l1">The world's first</p>
+                           </div>
+                           <div class="middel-text">
+                              <p class="l2">AR Experiential Network</p>
+                           </div>
+                           <div class="down-text">
+                              <p class="l3">with valuation at $4m</p>
+                           </div>
+                        </div>
+
+                        <div class="appi-port-clocktext ikea">
+                           <div class="up-text">
+                              <p class="l1">Developing ERP Solution for</p>
+                           </div>
+                           <div class="middel-text">
+                              <p class="l2">World's Largest Retailer</p>
+                           </div>
+                           <div class="down-text">
+                              <p class="l3">in furniture industry</p>
+                           </div>
+                        </div>
+                        <div class="appi-port-clocktext melltoo">
+                           <div class="up-text">
+                              <p class="l1">Biggest Classifieds app in</p>
+                           </div>
+                           <div class="middel-text">
+                              <p class="l2">Middle East</p>
+                           </div>
+                           <div class="down-text">
+                              <p class="l3">Countries</p>
+                           </div>
+                        </div>
+                        <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 414 414"
+                           style="enable-background:new 0 0 414 414;" xml:space="preserve">
+                           <path id="Transparent_Ring" class="transrg"
+                              style="opacity:0.4;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;enable-background:new"
+                              d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+                    c-47.8,0-91-19.4-122.3-50.7" />
+                           <path id="Opaque_Ring" class="transrgwht" stroke-dasharray="0,1000"
+                              style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+                    c-47.8,0-91-19.4-122.3-50.7" />
+                           <g id="Dots" class="dots-nav">
+                              <g>
+                                 <path class="dotsst dotsfill" style="fill:rgba(255, 255, 255, 1);"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                              <g>
+                                 <path class="dotsstro"
+                                    style="opacity:0.4;fill:none;stroke:rgba(255, 255, 255, 1);stroke-width:2;stroke-miterlimit:10;"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                           </g>
+                           <g id="Dots1" class="dots-nav">
+                              <g>
+                                 <path class="dotsst dotsfill1" style="fill:rgba(255, 255, 255, 1);"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                              <g>
+                                 <path class="dotsstro1"
+                                    style="opacity:0.4;fill:none;stroke:rgba(255, 255, 255, 1);stroke-width:2;stroke-miterlimit:10;"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                           </g>
+                           <g id="Dots2" class="dots-nav">
+                              <g>
+                                 <path class="dotsst dotsfill2" style="fill:rgba(255, 255, 255, 1);"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                              <g>
+                                 <path class="dotsstro2"
+                                    style="opacity:0.4;fill:none;stroke:rgba(255, 255, 255, 1);stroke-width:2;stroke-miterlimit:10;"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                           </g>
+                           <g id="Dots3" class="dots-nav">
+                              <g>
+                                 <path class="dotsst dotsfill3" style="fill:rgba(255, 255, 255, 1);"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                              <g>
+                                 <path class="dotsstro3"
+                                    style="opacity:0.4;fill:none;stroke:rgba(255, 255, 255, 1);stroke-width:2;stroke-miterlimit:10;"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                           </g>
+                           <g id="Dots4" class="dots-nav">
+                              <g>
+                                 <path class="dotsst dotsfill4" style="fill:rgba(255, 255, 255, 1);"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                              <g>
+                                 <path class="dotsstro4"
+                                    style="opacity:0.4;fill:none;stroke:rgba(255, 255, 255, 1);stroke-width:2;stroke-miterlimit:10;"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                           </g>
+                           <g id="Dots5" class="dots-nav">
+                              <g>
+                                 <path class="dotsst dotsfill5" style="fill:rgba(255, 255, 255, 1);"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                              <g>
+                                 <path class="dotsstro5"
+                                    style="opacity:0.4;fill:none;stroke:rgba(255, 255, 255, 1);stroke-width:2;stroke-miterlimit:10;"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                           </g>
+                           <g id="Dots6" class="dots-nav">
+                              <g>
+                                 <path class="dotsst dotsfill6" style="fill:rgba(255, 255, 255, 1);"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                              <g>
+                                 <path class="dotsstro6"
+                                    style="opacity:0.4;fill:none;stroke:rgba(255, 255, 255, 1);stroke-width:2;stroke-miterlimit:10;"
+                                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8" />
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <div class="appi-portfolio-sec-right">
+                        <div class="vemeport-img">
+                           <figure class="l1">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/veme-blockchain-app-developed-by-appinventiv.png"
+                                 alt="Veme Blockchain App developed by Appinventiv" />
+                           </figure>
+                           <figure class="l2">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/veme-app-ui-design.png"
+                                 alt="Veme app UI design" title="Veme app UI design" />
+                           </figure>
+                        </div>
+
+                        <div class="nexgtv-img">
+                           <figure class="l1">
+                              <img
+                                 src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/jobget-banner-case-wrapper.png"
+                                 alt="Jobget App  developed by Appinventiv" />
+                           </figure>
+                        </div>
+
+                        <div class="appi-ins-portfolio-right nasa-img">
+                           <figure class="l1">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/getting-started-actidrive.webp"
+                                 alt="" />
+                           </figure>
+                           <figure class="l2">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/actidrive-img2.webp"
+                                 alt="" title="" />
+                           </figure>
+                        </div>
+                        <div class="appi-ins-portfolio-right dominos-img">
+                           <figure class="l1">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/on-demand-app-development-company.png"
+                                 alt="Top Rated On Demand App Development Company" />
+                           </figure>
+                           <figure class="l2">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/ux-strategy-for-mobile-app-devlopment.png"
+                                 alt="UX Strategy for Mobile App devlopment" />
+                           </figure>
+                           <figure class="l3">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/domi-img1.png"
+                                 alt="UX Strategy for Mobile App devlopment" />
+                           </figure>
+                           <figure class="l4">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/dominos-bread.png"
+                                 alt="UX Strategy for Mobile App devlopment" />
+                           </figure>
+                           <figure class="l5">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/dominos-masala.png"
+                                 alt="UX Strategy for Mobile App devlopment" />
+                           </figure>
+                           <figure class="l6">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/dominos-bread1.png"
+                                 alt="UX Strategy for Mobile App devlopment" />
+                           </figure>
+                           <figure class="l7">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/pizza_box.png" />
+                           </figure>
+                        </div>
+                        <div class="appi-ins-portfolio-right binkx-img">
+                           <figure class="l1">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/social-networking-app-case-study.png"
+                                 alt="Social networking app case study" title="Social networking app case study" />
+                           </figure>
+                           <figure class="l2">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/karavan_2.png"
+                                 alt="Cryptocurrency transaction through mobile apps"
+                                 title="Cryptocurrency transaction through mobile apps" />
+                           </figure>
+                           <figure class="l3">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/developers-for-social-media-app.png"
+                                 alt="Developers for social media app" title="Developers for social media app" />
+                           </figure>
+                           <figure class="l4">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/karavan-social-networking-app-screen.png"
+                                 alt="Karavan social networking app screen"
+                                 title="Karavan social networking app screen" />
+                           </figure>
+                           <figure class="l5">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/karavan-social-networking-app-screen-2.png"
+                                 alt="Karavan social networking app screen 2"
+                                 title="Karavan social networking app screen 2" />
+                           </figure>
+                        </div>
+                        <div class="appi-ins-portfolio-right ikea-img">
+                           <figure class="l1">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/erp-app-development-service.png"
+                                 alt="ERP app development service" title="ERP app development service" />
+                           </figure>
+                        </div>
+                        <div class="appi-ins-portfolio-right melltoo-img">
+                           <figure class="l1">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/melltoo-img2.png"
+                                 alt="MellToo - UAE’s top classified ads platform"
+                                 title="MellToo - UAE’s top classified ads platform" />
+                           </figure>
+                           <figure class="l2">
+                              <img class="lazyload"
+                                 data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/melltoo-img1.png"
+                                 alt="Classifieds App Development Company" />
+                           </figure>
+                        </div>
+                     </div>
+                     <!-- Skip -->
+                     <a href="#client-logo" class="portskip dwn">Skip</a>
+                     <a href="#suiteserv" class="portskip up">Skip</a>
+                  </div>
+               </div>
+         </section>
+      </section>
    </section>
 
+
+   <link rel="stylesheet" href="css/style.css">
 
 
    <!-- products price section  -->
 
    <section class="products p-5">
 
+
       <div class="main-row row mx-auto container-md p-0">
+
          <div class="col-6 sub-sec">
             <!-- empty -->
          </div>
-         <div class="col-6 sub-sec shadow">
+         <div class="col-6 sub-sec shadow" id="one-bar">
+            <div class="left-bar"></div>
+            <div class="down-bar"></div>
             <h1>Products</h1>
             <ul>
                <li>Brand</li>
@@ -288,7 +1218,9 @@
                <li>Packaging</li>
             </ul>
          </div>
-         <div class="col-6 sub-sec shadow">
+         <div class="col-6 sub-sec shadow" id="two-bar">
+            <div class="right-bar"></div>
+            <div class="down-bar"></div>
             <h1>Price</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, porro?</p>
          </div>
@@ -298,7 +1230,9 @@
          <div class="col-6 sub-sec">
             <!-- empty -->
          </div>
-         <div class="col-6 sub-sec shadow">
+         <div class="col-6 sub-sec shadow" id="three-bar">
+            <div class="left-bar"></div>
+            <div class="down-bar"></div>
             <h1>Promotion</h1>
             <ul>
                <li>Ads</li>
@@ -309,7 +1243,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, porro?</p>
 
          </div>
-         <div class="col-6 sub-sec shadow">
+         <div class="col-6 sub-sec shadow" id="four-bar">
+            <div class="right-bar"></div>
+            <div class="down-bar"></div>
             <h1>Place</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, porro?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nihil eligendi doloribus quibusdam hic
@@ -329,24 +1265,27 @@
       <div class="main-row row mx-auto container-md">
          <div class="col-6 lt">
 
-            <div class="slideup-card">
+            <div class="slideup-card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+               data-aos-duration="1000" data-aos-easing="ease-in-out">
                <h3 class="title">TOFU (Top of the funnel)</h3>
                <span class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id voluptatibus natus provident culpa
+                  Lorem ipsum dolor natus provident culpa
                   quibusdam porro a assumenda, minus illo!
                </span>
             </div>
-            <div class="slideup-card">
+            <div class="slideup-card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+               data-aos-duration="1300" data-aos-easing="ease-in-out">
                <h3 class="title">MOFU (Middle of the funnel)</h3>
                <span class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id voluptatibus natus provident culpa
+                  Lorem ipsum dolor natus provident culpa
                   quibusdam porro a assumenda, minus illo!
                </span>
             </div>
-            <div class="slideup-card">
+            <div class="slideup-card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+               data-aos-duration="1600" data-aos-easing="ease-in-out">
                <h3 class="title">BOFU (Bottom of the funnel)</h3>
                <span class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id voluptatibus natus provident culpa
+                  Lorem ipsum dolor natus provident culpa
                   quibusdam porro a assumenda, minus illo!
                </span>
             </div>
@@ -358,18 +1297,26 @@
             <!-- funnel filling animation  -->
             <div class="funnel-shape">
 
-               <div class="top-dia dia">
+               <div class="top-dia dia" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50"
+                  data-aos-duration="1300" data-aos-easing="ease-in-out">
+                  <div class="wave1"></div>
+                  <div class="wave2"></div>
                </div>
-               <div class="mid-dia dia">
+               <div class="mid-dia dia" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50"
+                  data-aos-duration="1600" data-aos-easing="ease-in-out">
+                  <div class="wave1"></div>
+                  <div class="wave2"></div>
                </div>
-               <div class="bottom-dia dia">
+               <div class="bottom-dia dia" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50"
+                  data-aos-duration="1900" data-aos-easing="ease-in-out">
+                  <div class="wave1"></div>
+                  <div class="wave2"></div>
                </div>
             </div>
 
          </div>
       </div>
    </section>
-
 
 
    <!-- revenue model  -->
@@ -567,55 +1514,195 @@
 
 
 
-
-
-
    <!-- jquery -->
    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
    <!-- bootstrap js  -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
-   <script src="/path/to/jquery.min.js"></script>
+   <script src="js/turn.min.js"></script>
 
-   <script src="/path/to/hammer.min.js"></script>
+   <!-- <script src="node_modules/page-flip/dist/js/page-flip.browser.js"></script> -->
 
-   <script src="/path/to/jquery.hammer.min.js"></script>
-
+   <!-- <script src="node_modules/page-flip/dist/js/page-flip.module.js"></script> -->
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>
       AOS.init();
    </script>
 
+
+
+
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/CSSRulePlugin.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+   <script src="js/CustomEase.js"></script>
+
+
+
+
+   <script src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/jquery.min.js"></script>
+   <script
+      src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/bootstrap.min.js?v=1.0"></script>
+   <script
+      src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/owl.carousel.min.js?v=1.0"></script>
+   <script src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/lazysizes.min.js"></script>
+   <!-- <script src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/page/index.js"></script> -->
+
+   <script
+      src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/jquery.slimscroll.min.js"></script>
+   <script src="https://fast.wistia.com/embed/medias/jmqq724hly.jsonp" async></script>
+   <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+   <script src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/webTrack.js?v=1.32"></script>
+   <script src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/ppc.js?v=1.0.5"></script>
+   <script src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/devalidation.js?v=1.0"></script>
+   <!-- <script src="https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/jquery.easeScroll.js"></script> -->
+   <!-- intercom end-->
+
+   <!-- intercom -->
+   <script>
+      window.intercomSettings = { app_id: "fc8mzr6b" }, $(function () {
+
+         $(".getestimatetoppop").click(function (e) {
+
+            // e.preventDefault(), $( "body" ).css( { overflow: "hidden" } ), $( ".est-popoverlay.homeoverlay" ).fadeIn(), $( ".get-estimated-sec-popup" ).fadeIn()
+
+         }), $(".navigation>ul>li.nav_phone,.call-now .appi-cta a").click(function (e) {
+
+            e.preventDefault(), $("body").css({ overflow: "hidden" }), $(".est-popoverlay.outeroverlay").fadeIn(), $(".callus-popup-sec").fadeIn()
+
+         }), $(".estcloseoverlay").click(function () {
+
+            $("body").css({ overflow: "visible" }), $("#home-getestimatepop")[0].reset(), $(".est-popoverlay").fadeOut(), $(".get-estimated-sec-popup, #thankssubmit-sec").fadeOut(), $(".callus-popup-sec").fadeOut()
+
+         }), $(".est-popoverlay.outeroverlay, .calluscloseoverlay").click(function () {
+
+            $("body").css({ overflow: "visible" }), $(".est-popoverlay").fadeOut(), $(".callus-popup-sec").fadeOut()
+
+         }), $("body").on("click", function () {
+
+            $(".com_address").fadeOut(), $(".map-adress-sec .pointer-ring").removeClass("active")
+
+         }), $(".map-adress-sec .pointer-ring a").click(function () {
+
+            event.stopPropagation(), $(".com_address").fadeOut(), $(".map-adress-sec .pointer-ring").removeClass("active"), $(this).parent().toggleClass("active"), $(this).next(".com_address").fadeToggle()
+
+         }), $(".com_address").on("click", function () {
+
+            $(this).stop()
+
+         })
+
+      });
+   </script>
+
+
+
+   <script>
+      $('.checkbox').on('click', function () {
+         $(this).toggleClass('active');
+      })
+   </script>
+   <script type="text/javascript">
+      document.addEventListener('wpcf7mailsent', function (event) {
+         if ('13296', '13297', '13312', '13313', '13314', '11914', '12144', '12323', '12322', '12312' == event.detail.contactFormId) { // Change 123 to the ID of the form '11914', '12144', '12323', '12322', '12312'
+            $('body').addClass('no-scroll show_success');
+
+         }
+      }, false);
+   </script>
+   <script type='text/javascript' id='contact-form-7-js-extra'>
+      /* <![CDATA[ */
+      var wpcf7 = { "apiSettings": { "root": "https:\/\/appinventiv.com\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" } };
+/* ]]> */
+   </script>
+   <script type='text/javascript'
+      src='https://appinventiv.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.3.2'
+      id='contact-form-7-js'></script>
+   <script type='text/javascript'
+      src='https://appinventiv.com/wp-content/themes/twentynineteen/js/priority-menu.js?ver=1.1'
+      id='twentynineteen-priority-menu-js'></script>
+   <script type='text/javascript'
+      src='https://appinventiv.com/wp-content/plugins/enlighter/cache/X1_enlighterjs.min.js?ver=wtEUue+zyV7a2Ot'
+      id='enlighterjs-js'></script>
+   <script type='text/javascript' id='enlighterjs-js-after'>
+      !function (e, n) { if ("undefined" != typeof EnlighterJS) { var o = { "selectors": { "block": "pre.EnlighterJSRAW", "inline": "code.EnlighterJSRAW" }, "options": { "indent": 4, "ampersandCleanup": true, "linehover": true, "rawcodeDbclick": false, "textOverflow": "break", "linenumbers": false, "theme": "bootstrap4", "language": "generic", "retainCssClasses": false, "collapse": false, "toolbarOuter": "", "toolbarTop": "{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}", "toolbarBottom": "" } }; (e.EnlighterJSINIT = function () { EnlighterJS.init(o.selectors.block, o.selectors.inline, o.options) })() } else { (n && (n.error || n.log) || function () { })("Error: EnlighterJS resources not loaded yet!") } }(window, console);
+   </script>
+   <script type='text/javascript' src='https://appinventiv.com/wp-includes/js/wp-embed.min.js?ver=5.6'
+      id='wp-embed-js'></script>
+   <script type='text/javascript'
+      src='https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/ScrollMagic.min.js?ver=5.6'
+      id='home-js4-js'></script>
+   <script type='text/javascript'
+      src='https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/TweenMax.js?ver=5.6'
+      id='home-js6-js'></script>
+   <script type='text/javascript'
+      src='https://appinventiv.com/wp-content/themes/twentynineteen-child/js/plugins/aos.js?ver=5.6'
+      id='aos-js-js'></script>
+   <script type='text/javascript'
+      src='https://appinventiv.com/wp-content/themes/twentynineteen-child/js/page/home.js?ver=5.6'
+      id='home-foot-js-js'></script>
+
+
+
+
+
+   <!-- <script src="js/main.js"></script> -->
    <!-- custom script  -->
    <script src="js/script.js"></script>
 
    <script>
-      var currentPage = 0;
+      $("#demoBookExample").turn({
+         gradients: true,
+         acceleration: true,
+         duration: 2000,
+         ease: "slow"
+      })
 
-      $('.book')
-         .on('click', '.active', nextPage)
-         .on('click', '.flipped', prevPage);
+      $(window).bind('keydown', function (e) {
+         if (e.keyCode == 37)
+            $('#demoBookExample').turn('previous');
+         else if (e.keyCode == 38)
+            $('#demoBookExample').turn('previous');
+         else if (e.keyCode == 39)
+            $('#demoBookExample').turn('next');
+         else if (e.keyCode == 40)
+            $('#demoBookExample').turn('next');
+      });
 
-      $('.book').hammer().on("swipeleft", nextPage);
-      $('.book').hammer().on("swiperight", prevPage);
 
-      function prevPage() {
-         $('.flipped')
-            .last()
-            .removeClass('flipped')
-            .addClass('active')
-            .siblings('.page')
-            .removeClass('active');
-      }
+         // document.querySelector("#demoBookExample").addEventListener('wheel', function (event) {
+            //    if (event.deltaY < 0) {
+      //       $('#demoBookExample').turn('previous');
+      //    }
+      //    else if (event.deltaY > 0) {
+      //       $('#demoBookExample').turn('next');
+      //    }
+      // });
+   </script>
 
-      function nextPage() {
-         $('.active')
-            .removeClass('active')
-            .addClass('flipped')
-            .next('.page')
-            .addClass('active')
-            .siblings();
-      }
+
+   <script>
+      // const controller = new ScrollMagic.Controller();
+
+      // const scene = new ScrollMagic.Scene({
+      //    triggerElement: "#swiper",
+      //    triggerHook: 0,
+      //    duration: 1000
+      // })
+      //    .addIndicators()
+      //    .setPin("#swiper")
+      //    .addTo(controller)
+
    </script>
 </body>
 
