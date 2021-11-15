@@ -19,6 +19,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
    <!-- custome style  -->
    <link rel="stylesheet" href="css/style.css">
@@ -44,7 +45,7 @@
    <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent mb-3">
          <div class="container-fluid container-md">
-            <a class="navbar-brand" href="#"><img src="/assets/image/logo-white.png" alt="" width="50px"></a>
+            <a class="navbar-brand" href="#"><img src="assets/image/logo-white.png" alt="" width="50px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                aria-label="Toggle navigation">
@@ -86,10 +87,9 @@
          </div>
       </nav>
       <div class="row mx-auto container-md hero-section">
-         <div class="col-md-6">
-            <h2 data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="900"
+         <div class="col-md-6 lt mb-5">
+            <h2 class="mb-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="900"
                data-aos-easing="ease-in-out">The Rise of DeFi into P2P Transactions</h2>
-            <br>
             <p data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1200"
                data-aos-easing="ease-in-out">DeFi payment solutions create a more open economic system for underbanked
                and unbanked populations.</p>
@@ -98,11 +98,17 @@
                infrastructure and better serve
                wholesale and retail customers.</p>
 
-            <div class="buttons" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50" data-aos-duration="1800"
+            <div class="buttons" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1800"
                data-aos-easing="ease-in-out">
-               <a href="#" class="button btn btn-secondary py-2">Purchase Token</a>
+               <a href="#" class="button btn btn-secondary py-2 ">Purchase Token</a>
 
-               <a class="btn" id="svg-btn">
+
+               <a class=" py-2 rounded-pill" id="download"> <span class="ico"><i
+                        class="fas fa-cloud-download"></i></span><span class="text"> WhitePaper</span></a>
+
+
+
+               <!-- <a class="btn" id="svg-btn">
                   <svg viewBox='0 0 100 50' width='230' height='100' fill='none'>
                      <circle cx='20' cy='35' r='8.5' fill='#6c757d' class='mainCircle'></circle>
                      <circle cx='20' cy='35' r='8.05' stroke='#6c757d' stroke-width='.9' fill='url(#gradient)'
@@ -123,7 +129,7 @@
                         <stop offset='98%' class='gradient' stop-color='#6c757d' />
                      </linearGradient>
                   </svg>
-               </a>
+               </a> -->
 
             </div>
          </div>
@@ -139,7 +145,7 @@
 
                      <!-- base -->
                      <g transform="matrix(1,0,0,1,-1.93,468.7)" opacity="1">
-                        <image class="animated base-img fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                        <image class="animated base-img fadeInLeftShorter invert" data-animation="fadeInLeftShorter"
                            data-animation-delay="1s" width="558px" height="339px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
                            style="animation-delay: 1s; opacity: 1;"></image>
@@ -154,7 +160,7 @@
                      </g>
                      <!-- btc-base -->
                      <g transform="matrix(1,0,0,1,60.8,560.9)" opacity="1">
-                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                        <image class="animated fadeInUpShorter invert" data-animation="fadeInUpShorter"
                            data-animation-delay="1.9s" width="130px" height="130px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-btc.svg"
                            style="animation-delay: 1.9s; opacity: 1;"></image>
@@ -170,7 +176,7 @@
 
                      <!-- eth-base -->
                      <g transform="matrix(1,0,0,1,215,545)" opacity="1">
-                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                        <image class="animated fadeInUpShorter invert" data-animation="fadeInUpShorter"
                            data-animation-delay="1.5s" width="90px" height="130px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-eth.svg"
                            style="animation-delay: 1.5s; opacity: 1;"></image>
@@ -186,7 +192,7 @@
 
                      <!-- neo-base -->
                      <g transform="matrix(1,0,0,1,240.8,660.9)" opacity="1">
-                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                        <image class="animated fadeInUpShorter invert" data-animation="fadeInUpShorter"
                            data-animation-delay="1.7s" width="120px" height="120px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-neo.svg"
                            style="animation-delay: 1.7s; opacity: 1;"></image>
@@ -230,7 +236,7 @@
                      </g>
                      <!-- base -->
                      <g transform="matrix(1,0,0,1,151.07,301.7)" opacity="0.95">
-                        <image class="animated base-img fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                        <image class="animated base-img fadeInLeftShorter invert" data-animation="fadeInLeftShorter"
                            data-animation-delay="1.4s" width="558px" height="339px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
                            style="animation-delay: 1.4s; opacity: 1;"></image>
@@ -241,7 +247,7 @@
                         <g opacity="1" transform="matrix(1.0196,0,0,0.9676,-49.875,71.125)">
                            <path class="animated path" data-animation="path" data-animation-delay="1.4s"
                               stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
-                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="4"
+                              stroke="#fff" stroke-opacity="1" stroke-width="4"
                               d=" M57.584999084472656,53.77799987792969 C41.18600082397461,60.93600082397461 21.354000091552734,65.125 0,65.125 C-56.362789154052734,65.125 -102.125,35.94248580932617 -102.125,0 C-102.125,-35.94248580932617 -56.362789154052734,-65.125 0,-65.125 C0,-65.125 0,-65.125 0,-65.125 C56.362789154052734,-65.125 102.125,-35.94248580932617 102.125,0 C102.125,22.325000762939453 84.47000122070312,42.04199981689453 57.584999084472656,53.77799987792969"
                               style="animation-delay: 1.4s; opacity: 1;"></path>
                         </g>
@@ -252,8 +258,7 @@
                         <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                            <path class="animated path-reverse" data-animation="path-reverse" data-animation-delay="1.4s"
                               stroke-linecap="butt" stroke-linejoin="miter" stroke-dashoffset="20" fill="none"
-                              fill-opacity="0" stroke-miterlimit="4" stroke="rgb(99,125,221)" stroke-opacity="1"
-                              stroke-width="3"
+                              fill-opacity="0" stroke-miterlimit="4" stroke="#fff" stroke-opacity="1" stroke-width="3"
                               d="M0.26,101.431l65-45  c0,0,5.4-1.4,5-25l1-10c0,0-1.2-5.6,6-8l50-30c0,0,7.4-3.6,1-7l-65-38"
                               style="animation-delay: 1.4s; opacity: 1;"></path>
                         </g>
@@ -264,7 +269,7 @@
                         <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                            <path class="animated path-reverse" data-animation="path-reverse" data-animation-delay="1.4s"
                               stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
-                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              stroke="#fff" stroke-opacity="1" stroke-width="3"
                               d="M0.239,42.447l11-6  c0,0,5-1.2,4-25v-9c0,0-2-5.8,6-9l16-8"
                               style="animation-delay: 1.4s; opacity: 1;"></path>
                         </g>
@@ -275,18 +280,18 @@
                         <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                            <path class="animated path" data-animation="path" data-animation-delay="2.4s"
                               stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
-                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              stroke="#fff" stroke-opacity="1" stroke-width="3"
                               d="M101.68,24.545l-25-15  c0,0-6.14-6-14-1l-28,17c0,0-6.4,5.16-5-30v-20c0,0,0.8-5.6-4-5l-35,25c0,0-5.2,1.6-4,18v90c0,0-1.6,9.8,6,11l40,25c0,0,7,2.6,2,7  l-35,20"
                               style="animation-delay: 2.4s; opacity: 1;"></path>
                         </g>
                      </g>
                      <!-- logo-base -->
-                     <g transform="matrix(1,0,0,1,255,345)" opacity="0.5">
+                     <!-- <g transform="matrix(1,0,0,1,255,345)" opacity="0.5">
                         <image class="animated fadeInLeftShorter" data-animation="fadeInLeftShorter"
                            data-animation-delay="1.4s" width="250px" height="260px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/logo-base.svg"
                            style="animation-delay: 1.4s; opacity: 1;"></image>
-                     </g>
+                     </g> -->
 
                      <!-- logo-shaodw -->
                      <g transform="matrix(0.1385,0,0,0.1175,275,385)" opacity="0.65">
@@ -301,7 +306,7 @@
                         <image class="animated cic-logo fadeInUpShortest cic-logo-animation"
                            data-animation="fadeInUpShortest" data-animation-delay="2.4s" width="130px" height="89px"
                            preserveAspectRatio="xMidYMid slice"
-                           xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/logo.svg"
+                           xlink:href="https://whitepigeon.network/assets/images/coin.svg"
                            style="animation-delay: 2.4s; opacity: 1;"></image>
                      </g>
 
@@ -316,7 +321,7 @@
 
                      <!-- base- -->
                      <g transform="matrix(1,0,0,1,301.07,133.7)" opacity="0.95">
-                        <image class="animated base-img fadeInLeftShorter" data-animation="fadeInLeftShorter"
+                        <image class="animated base-img fadeInLeftShorter invert" data-animation="fadeInLeftShorter"
                            data-animation-delay="1.8s" width="558px" height="339px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/base.svg"
                            style="animation-delay: 1.8s; opacity: 1;"></image>
@@ -327,7 +332,7 @@
                         <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                            <path class="animated path" data-animation="path" data-animation-delay="2.4s"
                               stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
-                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              stroke="#fff" stroke-opacity="1" stroke-width="3"
                               d="M32.208,82.43l-35-20  c0,0-6.714-2.571,1-7l26-15c0,0,4.857-1.143,8-8v-35c0,0,0.857-5.81,3-6l70-45"
                               style="animation-delay: 2.4s; opacity: 1;"></path>
                         </g>
@@ -342,7 +347,7 @@
                      </g>
                      <!-- car-base -->
                      <g transform="matrix(1,0,0,1,408.62,240.74)" opacity="1">
-                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                        <image class="animated fadeInUpShorter invert" data-animation="fadeInUpShorter"
                            data-animation-delay="2.1s" width="109px" height="68px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-car.svg"
                            style="animation-delay: 2.1s; opacity: 1;"></image>
@@ -362,7 +367,7 @@
                         <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                            <path class="animated path" data-animation="path" data-animation-delay="2.4s"
                               stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
-                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              stroke="#fff" stroke-opacity="1" stroke-width="3"
                               d="M0.261,90.447l50,30  c0,0,4.15,5.17,14,0l12-6c0,0,6-2,5-8v-50c0,0-0.5-9,9-12l80-45c0,0,5.75-3.5,0-7l-32-16"
                               style="animation-delay: 2.4s; opacity: 1;"></path>
                         </g>
@@ -370,7 +375,7 @@
 
                      <!-- mobile-base-shadow -->
                      <g transform="matrix(1,0,0,1,565,300)" opacity="0.8">
-                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                        <image class="animated fadeInUpShorter " data-animation="fadeInUpShorter"
                            data-animation-delay="3s" width="120px" height="120px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-shadow.svg"
                            style="animation-delay: 3s; opacity: 1;"></image>
@@ -378,7 +383,7 @@
 
                      <!-- mobile-base -->
                      <g transform="matrix(1,0,0,1,565,310)" opacity="1">
-                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                        <image class="animated fadeInUpShorter invert" data-animation="fadeInUpShorter"
                            data-animation-delay="2.3s" width="122px" height="78px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-mobile.svg"
                            style="animation-delay: 2.3s; opacity: 1;"></image>
@@ -398,7 +403,7 @@
                         <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                            <path class="animated path-reverse" data-animation="path-reverse" data-animation-delay="1.4s"
                               stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
-                              stroke="rgb(99,125,221)" stroke-opacity="1" stroke-width="3"
+                              stroke="#fff" stroke-opacity="1" stroke-width="3"
                               d="M102.684,0v20  c0.666,7.167-9,11-9,11l-130,75c-11.25,4.5-9,13-9,13v50"
                               style="animation-delay: 1.4s; opacity: 1;"></path>
                         </g>
@@ -413,7 +418,7 @@
                      </g>
                      <!-- home-base -->
                      <g transform="matrix(1,0,0,1,570.8,140.9)" opacity="1">
-                        <image class="animated fadeInUpShorter" data-animation="fadeInUpShorter"
+                        <image class="animated fadeInUpShorter invert" data-animation="fadeInUpShorter"
                            data-animation-delay="2.4s" width="200px" height="150px" preserveAspectRatio="xMidYMid slice"
                            xlink:href="https://pixinvent.com/demo/crypto-ico/theme-assets/images-3d-animation/svg/svg-animation/icon-base-home.svg"
                            style="animation-delay: 2.4s; opacity: 1;"></image>
@@ -463,66 +468,33 @@
    <!-- problem and solutions section  -->
    <section class="solutions">
       <div class="main-row mx-auto p-0 container-fluid ">
-         <div class="flip-book" id="demoBookExample">
-            <div class="page page-cover page-cover-top" data-density="hard">
-               <div class="page-content">
-                  <h2>BOOK TITLE</h2>
+         <h2 class="text-center text-white mb-4">Solution For
+            Consumer</h2>
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <h1>Problems</h1>
+               </div>
+               <div class="swiper-slide">
+                  <h1>Speed Of Transaction</h1>
+               </div>
+               <div class="swiper-slide">
+                  <h1>Volatility in Price</h1>
+               </div>
+               <div class="swiper-slide">
+                  <h1>Transaction Cost</h1>
+               </div>
+               <div class="swiper-slide">
+                  <h1>Operational Transparency Audiobility</h1>
+               </div>
+               <div class="swiper-slide">
+                  <h1>Solutions</h1>
                </div>
             </div>
-            <div class="page">
-               <div class="page-content">
-                  <h2 class="page-header">Page header 1</h2>
-                  <div class="page-image" style="background-image: url(images/html/1.jpg)"></div>
-                  <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh,
-                     non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non
-                     tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a
-                     venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim.
-                     Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit
-                     amet,
-                     consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse
-                     potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac
-                     sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-                  <div class="page-footer">2</div>
-               </div>
-            </div>
-            <!-- PAGES .... -->
-            <div class="page">
-               <div class="page-content">
-                  <h2 class="page-header">Page header - 15</h2>
-                  <div class="page-image" style="background-image: url(images/html/7.jpg)"></div>
-                  <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh,
-                     non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non
-                     tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a
-                     venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim.
-                     Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit
-                     amet,
-                     consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse
-                     potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac
-                     sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-                  <div class="page-footer">16</div>
-               </div>
-            </div>
-            <div class="page">
-               <div class="page-content">
-                  <h2 class="page-header">Page header - 16</h2>
-                  <div class="page-image" style="background-image: url(images/html/8.jpg)"></div>
-                  <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh,
-                     non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non
-                     tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a
-                     venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim.
-                     Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit
-                     amet,
-                     consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse
-                     potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac
-                     sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-                  <div class="page-footer">17</div>
-               </div>
-            </div>
-            <div class="page page-cover page-cover-bottom" data-density="hard">
-               <div class="page-content">
-                  <h2>THE END</h2>
-               </div>
-            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
          </div>
       </div>
    </section>
@@ -531,7 +503,8 @@
 
    <!-- swot analysis section  -->
    <section class="swot-section py-5">
-      <h1 class="text-center text-white mb-5">SWOT ANALYSIS</h1>
+      <h1 class="text-center text-white mb-5" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50"
+         data-aos-duration="900" data-aos-easing="ease-in-out">SWOT ANALYSIS</h1>
 
 
       <div class="main-row row mx-auto container-fluid px-md-5">
@@ -539,13 +512,13 @@
          <div class="swot-left col-3 ">
             <div class="content" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
                data-aos-easing="ease-in-out">
-               <h3 class="title">content one</h3>
+               <h3 class="title">Strengths</h3>
                <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
             <div class="content" data-aos="fade-up" data-aos-offset="170" data-aos-delay="50" data-aos-duration="1400"
                data-aos-easing="ease-in-out">
-               <h3 class="title">content one</h3>
+               <h3 class="title">Weakness</h3>
                <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
@@ -583,13 +556,13 @@
          <div class="swot-right col-3 ">
             <div class="content" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
                data-aos-easing="ease-in-out">
-               <h3 class="title">content one</h3>
+               <h3 class="title">Opportunities</h3>
                <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
             <div class="content" data-aos="fade-up" data-aos-offset="170" data-aos-delay="50" data-aos-duration="1400"
                data-aos-easing="ease-in-out">
-               <h3 class="title">content one</h3>
+               <h3 class="title">Threats</h3>
                <small class="text">Lorem ipsum dolor sit doloribus
                   beatae.</small>
             </div>
@@ -721,60 +694,67 @@
                                     title="Mobile App of the year by Entrepreneur"></figure>
                            </div>
                            <div class="pp-head">
-                              <p><span class="l1">JobGet</span></p>
-                              <p><span class="l2">VEME</span></p>
-                              <p><span class="l3">Actidrive</span></p>
-                              <p><span class="l4">Domino's</span></p>
-                              <p><span class="l5">Karavan</span></p>
-                              <p><span class="l6">IKEA</span></p>
+                              <p><span class="l1">Awareness</span></p>
+                              <p><span class="l2">Acquisition</span></p>
+                              <p><span class="l3">Activation</span></p>
+                              <p><span class="l4">Retention</span></p>
+                              <p><span class="l5">Revenue</span></p>
+                              <p><span class="l6">Refferal</span></p>
                               <p><span class="l7">MellToo</span></p>
                            </div>
                            <div class="appi-pp-para">
                               <div class="appi-cont appi-pp-l1">
-                                 <p><span class="l1">The award winning app that is reshaping the employment</span></p>
-                                 <p><span class="l2">landscape has become the de facto platform for the blue</span></p>
-                                 <p><span class="l3">collar job space.</span>
-                                 </p>
+                                 <p><span class="l1">P2P transaction solutions on the Blockchain are Instant,</span></p>
+                                 <p><span class="l2"> Secure
+                                       &comes with No Downtimes</span></p>
+
                               </div>
                               <div class="appi-cont appi-pp-l2">
-                                 <p><span class="l1">Veme is the future of social videos, developed</span></p>
-                                 <p><span class="l2">with an aim to decentralize the authentic, loyal</span></p>
-                                 <p><span class="l3">network between the media creators and influencers.</span>
+
+
+
+                                 <p><span class="l1">Our initial customer base will be within the community</span></p>
+                                 <p><span class="l2">itself, and we have close to 7000
+                                       Members who will</span></p>
+                                 <p><span class="l3">be testing the WP Switch App at its launch.</span>
                                  </p>
+
                               </div>
                               <div class="appi-cont appi-pp-l3">
-                                 <p><span class="l1">An intuitive gesture-recognition</span>
+                                 <p><span class="l1">WP Switch App will be launched </span>
                                  </p>
-                                 <p><span class="l2">application built on IoT, enabling drivers</span>
+                                 <p><span class="l2">Customers will
+                                       be able to store</span>
                                  </p>
-                                 <p><span class="l3">to drive distraction-free.</span></p>
+                                 <p><span class="l3">send and receive their assets.</span></p>
                               </div>
                               <div class="appi-cont appi-pp-l4">
-                                 <p><span class="l1">How we increased Dominos</span></p>
-                                 <p><span class="l2">conversion rate to 23% with a refined</span></p>
-                                 <p><span class="l3">UX strategy.</span></p>
+                                 <p><span class="l1">With regular updates and additions to the</span></p>
+                                 <p><span class="l2">features, we will retain most of our</span></p>
+                                 <p><span class="l3">user base.</span></p>
                               </div>
                               <div class="appi-cont appi-pp-l5">
-                                 <p><span class="l1">We are developing world's first AR</span></p>
-                                 <p><span class="l2">Experiential network platform with a</span></p>
-                                 <p><span class="l3">valuation at $4m</span></p>
+                                 <p><span class="l1">Current settlement charges charged by</span></p>
+                                 <p><span class="l2"> banking institutions on the Merchants make</span></p>
+                                 <p><span class="l3">it too hard for them to survive.</span></p>
                               </div>
                               <div class="appi-cont appi-pp-l6">
-                                 <p><span class="l1">A one stop ERP Solution for Shoppers</span></p>
-                                 <p><span class="l2">to view all the store offers & for retailers to</span></p>
-                                 <p><span class="l3">get all customer data at on place.</span></p>
+                                 <p><span class="l1">Users will only be able to generate </span></p>
+                                 <p><span class="l2">a referral code once they complete</span></p>
+                                 <p><span class="l3">a specific set of
+                                       tasks.</span></p>
                               </div>
-                              <div class="appi-cont appi-pp-l7">
+                              <!-- <div class="appi-cont appi-pp-l7">
                                  <p><span class="l1">Melltoo, the App of the Year 2016, is UAE’s</span></p>
                                  <p><span class="l2">top classified ads platform that</span></p>
                                  <p><span class="l3">serves you with options for finding buyer/seller,</span></p>
-                              </div>
+                              </div> -->
 
                            </div>
                            <div class="appi-casestudy-navi">
                               <div class="pp-navi l2">
                                  <div class="appi-cta read_more_wrapper">
-                                    <a href="/portfolio/jobget-job-search-app/">
+                                    <a>
                                        <span class="text">
                                           View Case Study
                                           <span class="arrow">
@@ -794,9 +774,20 @@
                               </div>
                               <div class="pp-navi l1">
                                  <div class="appi-cta read_more_wrapper">
-                                    <a class="cm_soon">
+                                    <a>
                                        <span class="text">
-                                          Coming Soon
+                                          View Case Study
+                                          <span class="arrow">
+                                             <i><span>→</span></i>
+                                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32"
+                                                height="32" viewBox="0 0 32 32">
+                                                <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"
+                                                   stroke-miterlimit="10">
+                                                   <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
+                                                   </circle>
+                                                </g>
+                                             </svg>
+                                          </span>
                                        </span>
                                     </a>
                                  </div>
@@ -804,7 +795,7 @@
                               <div class="pp-navi l3">
                                  <div class="appi-cta read_more_wrapper">
                                     <div class="appi-cta read_more_wrapper">
-                                       <a href="/portfolio/actidrive-driver-assistant-app/">
+                                       <a>
                                           <span class="text">
                                              View Case Study
                                              <span class="arrow">
@@ -825,7 +816,7 @@
                               </div>
                               <div class="pp-navi l4">
                                  <div class="appi-cta read_more_wrapper">
-                                    <a href="/portfolio/dominos-pizza-delivery-app/">
+                                    <a>
                                        <span class="text">
                                           View Case Study
                                           <span class="arrow">
@@ -862,7 +853,7 @@
                               </div>
                               <div class="pp-navi l6">
                                  <div class="appi-cta read_more_wrapper">
-                                    <a href="/portfolio/ikea-shopping-app/">
+                                    <a>
                                        <span class="text">
                                           View Case Study
                                           <span class="arrow">
@@ -882,9 +873,20 @@
                               </div>
                               <div class="pp-navi l7">
                                  <div class="appi-cta read_more_wrapper">
-                                    <a class="cm_soon">
+                                    <a>
                                        <span class="text">
-                                          Coming Soon
+                                          View Case Study
+                                          <span class="arrow">
+                                             <i><span>→</span></i>
+                                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32"
+                                                height="32" viewBox="0 0 32 32">
+                                                <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"
+                                                   stroke-miterlimit="10">
+                                                   <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
+                                                   </circle>
+                                                </g>
+                                             </svg>
+                                          </span>
                                        </span>
                                     </a>
                                  </div>
@@ -896,32 +898,33 @@
                         <span class="clockbg-dial"></span>
                         <div class="nexgtv-center-text">
                            <div class="text-big">
-                              <p>Innovation Award</p>
+                              <p>Awareness
+                              </p>
                            </div>
                            <div class="text-sm">
-                              <p>winning App</p>
+                              <p></p>
                            </div>
                         </div>
 
                         <div class="appi-port-clocktext blockchain">
                            <div class="up-text">
-                              <p class="l1">The Next Big</p>
+                              <p class="l1"></p>
                            </div>
                            <div class="middel-text">
-                              <p class="l2">Blockchain</p>
+                              <p class="l2">Acquisition</p>
                            </div>
                            <div class="down-text">
-                              <p class="l3">Revolution</p>
+                              <p class="l3"></p>
                            </div>
                         </div>
 
                         <div class="appi-port-clocktext nasa actidrive">
                            <div class="up-text">
-                              <p class="l1">Redefining</p>
+                              <p class="l1"></p>
                            </div>
                            <div class="middel-text">
                               <p class="l2">
-                                 BMI Measurement
+                                 Activation
                               </p>
                            </div>
                            <div class="down-text">
@@ -931,48 +934,48 @@
 
                         <div class="appi-port-clocktext dominos">
                            <div class="up-text">
-                              <p class="l1">Redefining</p>
+                              <p class="l1"></p>
                            </div>
                            <div class="middel-text">
-                              <p class="l2">UX Strategy</p>
+                              <p class="l2">Retention</p>
                            </div>
                            <div class="down-text">
-                              <p class="l3">and UI design</p>
+                              <p class="l3"></p>
                            </div>
                         </div>
 
                         <div class="appi-port-clocktext binkx">
                            <div class="up-text">
-                              <p class="l1">The world's first</p>
+                              <p class="l1"></p>
                            </div>
                            <div class="middel-text">
-                              <p class="l2">AR Experiential Network</p>
+                              <p class="l2">Revenue</p>
                            </div>
                            <div class="down-text">
-                              <p class="l3">with valuation at $4m</p>
+                              <p class="l3"></p>
                            </div>
                         </div>
 
                         <div class="appi-port-clocktext ikea">
                            <div class="up-text">
-                              <p class="l1">Developing ERP Solution for</p>
+                              <p class="l1"></p>
                            </div>
                            <div class="middel-text">
-                              <p class="l2">World's Largest Retailer</p>
+                              <p class="l2">Referral</p>
                            </div>
                            <div class="down-text">
-                              <p class="l3">in furniture industry</p>
+                              <p class="l3"></p>
                            </div>
                         </div>
                         <div class="appi-port-clocktext melltoo">
                            <div class="up-text">
-                              <p class="l1">Biggest Classifieds app in</p>
+                              <p class="l1"></p>
                            </div>
                            <div class="middel-text">
                               <p class="l2">Middle East</p>
                            </div>
                            <div class="down-text">
-                              <p class="l3">Countries</p>
+                              <p class="l3"></p>
                            </div>
                         </div>
                         <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg"
@@ -1066,16 +1069,16 @@
                      </div>
                      <div class="appi-portfolio-sec-right">
                         <div class="vemeport-img">
-                           <figure class="l1">
+                           <!-- <figure class="l1">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/veme-blockchain-app-developed-by-appinventiv.png"
                                  alt="Veme Blockchain App developed by Appinventiv" />
-                           </figure>
-                           <figure class="l2">
+                           </figure> -->
+                           <!-- <figure class="l2">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/veme-app-ui-design.png"
                                  alt="Veme app UI design" title="Veme app UI design" />
-                           </figure>
+                           </figure> -->
                         </div>
 
                         <div class="nexgtv-img">
@@ -1087,107 +1090,107 @@
                         </div>
 
                         <div class="appi-ins-portfolio-right nasa-img">
-                           <figure class="l1">
+                           <!-- <figure class="l1">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/getting-started-actidrive.webp"
                                  alt="" />
-                           </figure>
-                           <figure class="l2">
+                           </figure> -->
+                           <!-- <figure class="l2">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/actidrive-img2.webp"
                                  alt="" title="" />
-                           </figure>
+                           </figure> -->
                         </div>
                         <div class="appi-ins-portfolio-right dominos-img">
-                           <figure class="l1">
+                           <!-- <figure class="l1">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/on-demand-app-development-company.png"
                                  alt="Top Rated On Demand App Development Company" />
-                           </figure>
-                           <figure class="l2">
+                           </figure> -->
+                           <!-- <figure class="l2">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/ux-strategy-for-mobile-app-devlopment.png"
                                  alt="UX Strategy for Mobile App devlopment" />
-                           </figure>
-                           <figure class="l3">
+                           </figure> -->
+                           <!-- <figure class="l3">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/domi-img1.png"
                                  alt="UX Strategy for Mobile App devlopment" />
-                           </figure>
-                           <figure class="l4">
+                           </figure> -->
+                           <!-- <figure class="l4">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/dominos-bread.png"
                                  alt="UX Strategy for Mobile App devlopment" />
-                           </figure>
-                           <figure class="l5">
+                           </figure> -->
+                           <!-- <figure class="l5">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/dominos-masala.png"
                                  alt="UX Strategy for Mobile App devlopment" />
-                           </figure>
-                           <figure class="l6">
+                           </figure> -->
+                           <!-- <figure class="l6">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/dominos-bread1.png"
                                  alt="UX Strategy for Mobile App devlopment" />
-                           </figure>
-                           <figure class="l7">
+                           </figure> -->
+                           <!-- <figure class="l7">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/pizza_box.png" />
-                           </figure>
+                           </figure> -->
                         </div>
                         <div class="appi-ins-portfolio-right binkx-img">
-                           <figure class="l1">
+                           <!-- <figure class="l1">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/social-networking-app-case-study.png"
                                  alt="Social networking app case study" title="Social networking app case study" />
-                           </figure>
-                           <figure class="l2">
+                           </figure> -->
+                           <!-- <figure class="l2">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/karavan_2.png"
                                  alt="Cryptocurrency transaction through mobile apps"
                                  title="Cryptocurrency transaction through mobile apps" />
-                           </figure>
-                           <figure class="l3">
+                           </figure> -->
+                           <!-- <figure class="l3">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/developers-for-social-media-app.png"
                                  alt="Developers for social media app" title="Developers for social media app" />
-                           </figure>
-                           <figure class="l4">
+                           </figure> -->
+                           <!-- <figure class="l4">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/karavan-social-networking-app-screen.png"
                                  alt="Karavan social networking app screen"
                                  title="Karavan social networking app screen" />
-                           </figure>
-                           <figure class="l5">
+                           </figure> -->
+                           <!-- <figure class="l5">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/karavan-social-networking-app-screen-2.png"
                                  alt="Karavan social networking app screen 2"
                                  title="Karavan social networking app screen 2" />
-                           </figure>
+                           </figure> -->
                         </div>
                         <div class="appi-ins-portfolio-right ikea-img">
-                           <figure class="l1">
+                           <!-- <figure class="l1">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/erp-app-development-service.png"
                                  alt="ERP app development service" title="ERP app development service" />
-                           </figure>
+                           </figure> -->
                         </div>
                         <div class="appi-ins-portfolio-right melltoo-img">
-                           <figure class="l1">
+                           <!-- <figure class="l1">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/melltoo-img2.png"
                                  alt="MellToo - UAE’s top classified ads platform"
                                  title="MellToo - UAE’s top classified ads platform" />
-                           </figure>
-                           <figure class="l2">
+                           </figure> -->
+                           <!-- <figure class="l2">
                               <img class="lazyload"
                                  data-src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/melltoo-img1.png"
                                  alt="Classifieds App Development Company" />
-                           </figure>
+                           </figure> -->
                         </div>
                      </div>
                      <!-- Skip -->
-                     <a href="#client-logo" class="portskip dwn">Skip</a>
-                     <a href="#suiteserv" class="portskip up">Skip</a>
+                     <!-- <a href="#client-logo" class="portskip dwn">Skip</a> -->
+                     <!-- <a href="#suiteserv" class="portskip up">Skip</a> -->
                   </div>
                </div>
          </section>
@@ -1202,7 +1205,7 @@
 
    <section class="products p-5">
 
-
+      <h1 class="text-center text-white py-4">Market Place</h1>
       <div class="main-row row mx-auto container-md p-0">
 
          <div class="col-6 sub-sec">
@@ -1211,18 +1214,35 @@
          <div class="col-6 sub-sec shadow" id="one-bar">
             <div class="left-bar"></div>
             <div class="down-bar"></div>
-            <h1>Products</h1>
-            <ul>
+            <h1 class="title">Products</h1>
+            <ul class="list mb-0 pb-0">
                <li>Brand</li>
                <li>Feature</li>
                <li>Packaging</li>
             </ul>
+            <p class="para">
+               We looked into few past projects and
+               were able to see their shortcomings.
+               Consumers tend to use the product for an
+               initial phase of time but eventually leaves.
+            </p>
          </div>
          <div class="col-6 sub-sec shadow" id="two-bar">
             <div class="right-bar"></div>
-            <div class="down-bar"></div>
-            <h1>Price</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, porro?</p>
+            <div class="down-bar" style="transform: scaleY(0%);"></div>
+            <h1 class="title">Price</h1>
+            <ul class="list">
+               <li>Price</li>
+               <li>Discounts</li>
+               <li>Bundling deals</li>
+               <li>Credit terms</li>
+            </ul>
+            <p class="para">When we decided to let go with regular
+               banking channels, we eventually saved
+               on many costs involved in settlements for
+               card charges, like up to 3% settlement
+               charges that a Merchant has to bear just
+               to keep his customer.</p>
          </div>
          <div class="col-6 sub-sec">
             <!-- empty -->
@@ -1233,24 +1253,36 @@
          <div class="col-6 sub-sec shadow" id="three-bar">
             <div class="left-bar"></div>
             <div class="down-bar"></div>
-            <h1>Promotion</h1>
-            <ul>
+            <h1 class="title">Promotion</h1>
+            <ul class="list">
                <li>Ads</li>
                <li>PR</li>
                <li>Social Media </li>
                <li>Email Search Engine</li>
+               <li>Video</li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, porro?</p>
+            <p class="para">White Pigeon Network has already
+               deployed Marketing Agencies and PR
+               Managements to take care of our social
+               media activities and Partner
+               relationships.</p>
 
          </div>
          <div class="col-6 sub-sec shadow" id="four-bar">
             <div class="right-bar"></div>
             <div class="down-bar"></div>
-            <h1>Place</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, porro?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nihil eligendi doloribus quibusdam hic
-               commodi mollitia.</p>
-
+            <h1 class="title">Place</h1>
+            <ul class="list">
+               <li>Stores</li>
+               <li>Website</li>
+               <li>Online Marketplace</li>
+            </ul>
+            <p class="para">WhitePigeon will be available for services
+               on the Web, Mobile Applications, Tablets,
+               and Smart Watches, to name a few.</p>
+            <p class="para">We are getting Merchants onboarded
+               who would love to sell from their Physical
+               stores as well.</p>
          </div>
          <div class="col-6 sub-sec">
             <!-- empty -->
@@ -1261,12 +1293,14 @@
 
 
    <!-- funnel  -->
-   <section class="funnel border">
+   <section class="funnel ">
+      <h1 class="text-center text-white py-2">Marketing Activities</h1>
       <div class="main-row row mx-auto container-md">
          <div class="col-6 lt">
 
             <div class="slideup-card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                data-aos-duration="1000" data-aos-easing="ease-in-out">
+               <div class="line line-1"></div>
                <h3 class="title">TOFU (Top of the funnel)</h3>
                <span class="desc">
                   Lorem ipsum dolor natus provident culpa
@@ -1275,6 +1309,8 @@
             </div>
             <div class="slideup-card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                data-aos-duration="1300" data-aos-easing="ease-in-out">
+               <div class="line line-2"></div>
+
                <h3 class="title">MOFU (Middle of the funnel)</h3>
                <span class="desc">
                   Lorem ipsum dolor natus provident culpa
@@ -1283,6 +1319,8 @@
             </div>
             <div class="slideup-card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                data-aos-duration="1600" data-aos-easing="ease-in-out">
+               <div class="line line-3"></div>
+
                <h3 class="title">BOFU (Bottom of the funnel)</h3>
                <span class="desc">
                   Lorem ipsum dolor natus provident culpa
@@ -1296,8 +1334,11 @@
          <div class="col-6 rt">
             <!-- funnel filling animation  -->
             <div class="funnel-shape">
+               <h3 class="text1">TOFU </h3>
+               <h3 class="text2">MOFU</h3>
+               <h3 class="text3">BOFU</h3>
 
-               <div class="top-dia dia" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50"
+               <!-- <div class="top-dia dia" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50"
                   data-aos-duration="1300" data-aos-easing="ease-in-out">
                   <div class="wave1"></div>
                   <div class="wave2"></div>
@@ -1311,8 +1352,14 @@
                   data-aos-duration="1900" data-aos-easing="ease-in-out">
                   <div class="wave1"></div>
                   <div class="wave2"></div>
-               </div>
+               </div> -->
+
+
+
+
+               <!-- HTML -->
             </div>
+            <div id="funnel" style="width: 100%; height: 400px;"></div>
 
          </div>
       </div>
@@ -1321,7 +1368,7 @@
 
    <!-- revenue model  -->
 
-   <section class="revenue">
+   <!-- <section class="revenue">
       <h1 class="text-center my-5">Revenue Model</h1>
 
       <div class="row main-row mx-auto">
@@ -1356,16 +1403,16 @@
          </div>
       </div>
 
-   </section>
+   </section> -->
 
 
    <!-- core team -->
 
    <section class="team">
-      <h1 class="text-center my-5">Our Team</h1>
+      <h1 class="text-center py-5">Our Team</h1>
       <div class="row mx-auto">
          <div class="col-4 card-container">
-            <div class="team-card">
+            <div class="team-card" data-tilt>
                <div class="img-box">
                   <img
                      src="data:image/jpeg;base64,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"
@@ -1384,7 +1431,7 @@
             </div>
          </div>
          <div class="col-4 card-container">
-            <div class="team-card">
+            <div class="team-card" data-tilt>
                <div class="img-box">
                   <img
                      src="data:image/jpeg;base64,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"
@@ -1403,7 +1450,7 @@
             </div>
          </div>
          <div class="col-4 card-container">
-            <div class="team-card">
+            <div class="team-card" data-tilt>
                <div class="img-box">
                   <img
                      src="data:image/jpeg;base64,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"
@@ -1427,8 +1474,11 @@
 
 
    <!-- roadmap -->
-   <section class="roadmap">
-      <h1 class="text-center my-5">Roadmap</h1>
+   <section class="roadmap mb-5">
+      <h1 class="text-center py-5">Roadmap</h1>
+
+      <img src="https://whitepigeon.network/assets/images/coin.svg" alt="" class="active-img" id="float-image">
+
       <div class="row main-row mx-auto container-fluid">
          <div class="col-6 float">
             <div class="content">
@@ -1498,7 +1548,7 @@
                QTR 1 2021
             </div>
          </div>
-         <div class="col-6 desc">
+         <div class="col-6 desc last-path">
             <span>Lorem ipsum dolor sit amet consectetur
                necessitatibus.</span>
          </div>
@@ -1520,19 +1570,69 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
    <script src="js/turn.min.js"></script>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-   <!-- <script src="node_modules/page-flip/dist/js/page-flip.browser.js"></script> -->
-
-   <!-- <script src="node_modules/page-flip/dist/js/page-flip.module.js"></script> -->
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>
       AOS.init();
    </script>
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         effect: "cards",
+         grabCursor: true,
+         pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar"
+         },
+         mousewheel: true,
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+         }
+      });
+   </script>
 
+   <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+   <script src="https://www.amcharts.com/lib/3/funnel.js"></script>
+   <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+   <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 
-
-
-
+   <script>
+      var chart = AmCharts.makeChart("funnel", {
+         "type": "funnel",
+         "theme": "none",
+         "dataProvider": [{
+            "title": "",
+            "value": 150
+         }, {
+            "title": "",
+            "value": 150
+         }, {
+            "title": "",
+            "value": 200
+         }],
+         "balloon": {
+            "fixedPosition": false
+         },
+         "valueField": "value",
+         "titleField": "title",
+         "marginRight": 40,
+         "marginLeft": 50,
+         "startX": -100,
+         "depth3D": 100,
+         "angle": 40,
+         "outlineAlpha": 1,
+         "outlineColor": "#FFFFFF",
+         "outlineThickness": 2,
+         "labelPosition": "left",
+         // "labelColor": "#fff",
+         // "balloonText": "[[title]]: [[value]]n[[description]]",
+         "export": {
+            "enabled": false
+         }
+      });
+   </script>
+   <script src="https://unpkg.com/tilt.js@1.1.19/dest/tilt.jquery.js"></script>
 
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>

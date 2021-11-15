@@ -92,7 +92,7 @@ $(document).ready(function () {
     transform: " scaleY(100%)",
     scrollTrigger: {
       trigger: "#two-bar ",
-      start: "top 60%",
+      start: "top 20%",
       end: "bottom 40%",
       scrub: true,
     },
@@ -167,7 +167,63 @@ $(document).ready(function () {
       scrub: true,
     },
   });
+
+  gsap.to(" .line-1", {
+    duration: 6000,
+    ease: "slow",
+    transform: "scaleX(125%)",
+    scrollTrigger: {
+      trigger: ".line-1 ",
+      start: "top 90%",
+      end: "bottom 70%",
+      scrub: true,
+    },
+  });
+  gsap.to(".line-2", {
+    duration: 6000,
+    ease: "slow",
+    transform: "scaleX(125%)",
+    scrollTrigger: {
+      trigger: ".line-2",
+      start: "top 90%",
+      end: "bottom 70%",
+      scrub: true,
+    },
+  });
+  gsap.to(".line-3", {
+    duration: 6000,
+    ease: "slow",
+    transform: "scaleX(105%)",
+    scrollTrigger: {
+      trigger: ".line-3",
+      start: "top 95%",
+      end: "bottom 80%",
+      scrub: true,
+    },
+  });
 });
+
+// window.addEventListener("wheel", function (event) {
+//   let revert;
+
+//   if (event.deltaY < 0) {
+//     $("#float-image").addClass("active-img");
+//   } else if (event.deltaY > 0) {
+//     $("#float-image").removeClass("active-img");
+
+gsap.to("#float-image", {
+  duration: 50000,
+  top: "96%",
+  scrollTrigger: {
+    trigger: "#float-image",
+    start: "top 15%",
+    end: "bottom -100%",
+    scrub: true,
+  },
+});
+
+//   }
+// });
 
 let tl,
   downloading = false,
@@ -402,3 +458,13 @@ function changeText() {
     }
   }
 })();
+
+$(".team-card").tilt({
+  maxTilt: 15,
+  perspective: 1200,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  speed: 1200,
+  glare: true,
+  maxGlare: 0.2,
+  scale: 1,
+});
