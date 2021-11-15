@@ -2030,7 +2030,9 @@ textarea {
 
 .vemeport-img figure img {
   position: relative;
-  top: 100vh;
+  width: 700px;
+  right: 100px;
+  top: 140vh;
 }
 
 .vemeport-img figure.l2 img {
@@ -2059,7 +2061,7 @@ textarea {
 }
 
 .nexgtv-img figure.l1 {
-  left: 0;
+  left: 150px;
   bottom: -1000px;
   z-index: 2;
 }

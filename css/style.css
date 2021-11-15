@@ -238,8 +238,14 @@ header #svg-animation .path-reverse {
 
 #download {
   padding: 2px 5px;
+  min-width: 50px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 20px;
   height: 50px;
-  width: 150px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -253,21 +259,32 @@ header #svg-animation .path-reverse {
   text-decoration: none;
   border-radius: 10%;
   color: #fff;
-  -webkit-animation: download-alt 1.5s linear infinite;
-          animation: download-alt 1.5s linear infinite;
   cursor: pointer;
   font-size: 15px;
 }
 
+#download .circle {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  top: 100%;
+  border-radius: 50%;
+  position: absolute;
+  background: chocolate;
+  -webkit-transition: all 1s 1s linear;
+  transition: all 1s 1s linear;
+}
+
 #download .ico {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
   width: 40px;
   height: 40px;
   background: #fff;
   border-radius: 50%;
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -276,25 +293,43 @@ header #svg-animation .path-reverse {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-animation: roll 2s ease infinite;
-          animation: roll 2s ease infinite;
+  margin-right: auto;
+  z-index: 2;
 }
 
 #download .ico .fas {
-  -webkit-animation: rotate 2s ease infinite;
-          animation: rotate 2s ease infinite;
+  -webkit-transition: all 1s 1s linear;
+  transition: all 1s 1s linear;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 #download .text {
+  margin-left: auto;
+  line-height: 45px;
   overflow: hidden;
-  display: none;
-  -webkit-animation: download 1s ease infinite;
-          animation: download 1s ease infinite;
+  padding: 0px 6px;
+  width: 100px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  -webkit-transform-origin: 100% 0 0;
+          transform-origin: 100% 0 0;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 @-webkit-keyframes download-alt {
   from {
-    width: 170px;
+    width: -webkit-fit-content;
+    width: fit-content;
     border-radius: 10%;
   }
   to {
@@ -305,12 +340,54 @@ header #svg-animation .path-reverse {
 
 @keyframes download-alt {
   from {
-    width: 170px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     border-radius: 10%;
   }
   to {
     width: 50px;
     border-radius: 50%;
+  }
+}
+
+@-webkit-keyframes download {
+  from {
+    width: 90px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes download {
+  from {
+    width: 90px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
