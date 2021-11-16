@@ -12,9 +12,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "nunito";
+  src: url("fonts/Nunito/Nunito-Bold.ttf");
+}
 body {
-  font-family: "Comfortaa", cursive;
+  font-family: "nunito";
   font-weight: 400;
+}
+h1,
+h2,
+h3 {
+  font-family: "poppins-bold";
 }
 
 header {
@@ -323,14 +337,38 @@ header {
 
   .swiper-slide {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
     color: rgb(10, 10, 10);
     background: rgb(255, 255, 255);
+    overflow: hidden;
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      border-bottom: 1px solid #aaa;
+    }
+    .list {
+      margin-top: 20px;
+
+      li {
+        font-size: 15px;
+        list-style: disc;
+        font-weight: normal;
+      }
+    }
+    .para {
+      margin: 0;
+      padding: 0;
+      margin-top: 20px;
+      font-size: 15px;
+      font-family: "nunito";
+    }
   }
 }
 
@@ -341,7 +379,6 @@ header {
   min-height: 80vh;
   height: fit-content;
   padding: 0 30px;
-
   margin: 0;
   color: #fff;
   .swot-circles {
@@ -736,7 +773,7 @@ header {
   .team-card {
     padding: 20px;
     width: 70%;
-    min-height: 400px;
+    min-height: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -766,19 +803,20 @@ header {
     }
     .prof,
     .name {
-      margin-top: 20px;
+      margin-top: 5px;
       font-weight: bold;
       font-size: 17px;
     }
     .name {
       font-size: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
     .list {
       align-self: flex-start;
 
       li {
-        font-size: 13px;
+        font-size: 14px;
+        list-style: disc;
       }
     }
   }
@@ -788,6 +826,55 @@ header {
   background: #222;
   color: #fff;
   position: relative;
+
+  .waves1,
+  .waves2,
+  .waves3 {
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    border-radius: 50%;
+    background: #fff;
+    //  transform-origin: center;
+    animation: wave 5s linear 0s infinite alternate;
+  }
+  .waves1 {
+    width: 300px;
+    height: 300px;
+    opacity: 0.1;
+    animation-delay: 0.1s;
+  }
+  .waves2 {
+    width: 500px;
+    height: 500px;
+    opacity: 0.1;
+    animation-delay: 0.5s;
+  }
+  .waves3 {
+    width: 700px;
+    height: 700px;
+    opacity: 0.1;
+    animation-delay: 0.8s;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    80% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+
   #float-image {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -833,6 +920,15 @@ header {
       left: 100%;
       transform: translate(-50%, -50%);
       box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
+    }
+  }
+}
+
+.solution-provider {
+  background: #111;
+  .main-row {
+    .col-6 {
+      text-align: center;
     }
   }
 }

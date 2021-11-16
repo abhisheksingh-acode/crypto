@@ -12,9 +12,25 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "poppins-bold";
+  src: url("fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("fonts/Nunito/Nunito-Bold.ttf");
+}
+
 body {
-  font-family: "Comfortaa", cursive;
+  font-family: "nunito";
   font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "poppins-bold";
 }
 
 header {
@@ -456,18 +472,47 @@ header #svg-animation .path-reverse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
   color: #0a0a0a;
   background: white;
+  overflow: hidden;
+}
+
+.solutions .swiper-slide .title {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #aaa;
+}
+
+.solutions .swiper-slide .list {
+  margin-top: 20px;
+}
+
+.solutions .swiper-slide .list li {
+  font-size: 15px;
+  list-style: disc;
+  font-weight: normal;
+}
+
+.solutions .swiper-slide .para {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "nunito";
 }
 
 .swot-section {
@@ -1003,7 +1048,7 @@ header #svg-animation .path-reverse {
 .team .team-card {
   padding: 20px;
   width: 70%;
-  min-height: 400px;
+  min-height: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1056,14 +1101,14 @@ header #svg-animation .path-reverse {
 
 .team .team-card .prof,
 .team .team-card .name {
-  margin-top: 20px;
+  margin-top: 5px;
   font-weight: bold;
   font-size: 17px;
 }
 
 .team .team-card .name {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .team .team-card .list {
@@ -1072,13 +1117,92 @@ header #svg-animation .path-reverse {
 }
 
 .team .team-card .list li {
-  font-size: 13px;
+  font-size: 14px;
+  list-style: disc;
 }
 
 .roadmap {
   background: #222;
   color: #fff;
   position: relative;
+}
+
+.roadmap .waves1,
+.roadmap .waves2,
+.roadmap .waves3 {
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation: wave 5s linear 0s infinite alternate;
+          animation: wave 5s linear 0s infinite alternate;
+}
+
+.roadmap .waves1 {
+  width: 300px;
+  height: 300px;
+  opacity: 0.1;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.roadmap .waves2 {
+  width: 500px;
+  height: 500px;
+  opacity: 0.1;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.roadmap .waves3 {
+  width: 700px;
+  height: 700px;
+  opacity: 0.1;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+            transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+            transform: translate(-50%, -50%) scale(0.9);
+  }
 }
 
 .roadmap #float-image {
@@ -1135,6 +1259,14 @@ header #svg-animation .path-reverse {
           transform: translate(-50%, -50%);
   -webkit-box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
           box-shadow: 1px 1px 10px 2px #fff, 3px 3px 60px #fff;
+}
+
+.solution-provider {
+  background: #111;
+}
+
+.solution-provider .main-row .col-6 {
+  text-align: center;
 }
 
 .token-allocation {
